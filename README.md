@@ -65,6 +65,29 @@ Debug.Log(arabalar[0][1]);  // audi
 
 ``` 
 
+### Switch Case
+
+- Çok fazla koşul ve sorgu yönteminde kullanılabilir.
+
+```C#
+int sayi=5;
+switch(sayi)
+{
+case 1:
+Debug.Log("Pazartesi");
+break;
+case2:
+Debug.Log("Salı");
+break;
+case3:
+Debug.Log("Çarşamba");
+break;
+default: 
+Debug.Log("Hatalı uyuşma yok");
+break;
+}
+```
+
 
 ### Class ve Fonksiyon(Method)
 Namespace ise sınıfları kapsar.
