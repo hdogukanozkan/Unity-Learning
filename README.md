@@ -88,6 +88,30 @@ break;
 }
 ```
 
+### Listeler
+
+####ArrayList ve List vardır.
+
+```C#
+List<int> yaslar = new List<int>(); //yaslar adinda liste oluşturma.
+yaslar.Add(50); // veri ekleme
+yaslar.Add(40); // 2.veri
+Debug.Log(yaslar.count); // eleman sayısı
+Debug.Log(yaslar[1]); // elemanı yazdırma
+foreach(var item in yaslar)
+{
+   Debug.Log(item)   // Tüm elemanları listeler
+}
+
+for(int i =0;i<yaslar.count;i++)
+{
+    Debug.Log(yaslar[i]);  // eleman sayısı kadar çalışıp tüm elemanları yazdırır
+}
+
+List<string> adlar= new List<string>(); //adlar adinda liste oluşturma.
+adlar.Add("ahmet"); // veri ekleme
+adlar.Add("mahmut"); // 2.veri
+```
 
 ### Class ve Fonksiyon(Method)
 Namespace ise sınıfları kapsar.
