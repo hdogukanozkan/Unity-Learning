@@ -4,10 +4,41 @@
 ### Değişkenler 
 
 ```C#
-int i = 0;
-string ad ="dogukan";
-float yaş = 20.5f;
-bool dogrumu = true;
+int i = 0; //tam sayılar
+string ad ="dogukan"; //metinler
+float yaş = 20.5f; //virgüllü küsüratlı sayılar
+bool dogrumu = true; //doğru yanlış
+```
+
+### Döngüler
+
+```C#
+
+For(int i=0;i<5;i++)
+{
+// 5 defa dönmesini sağlar
+}
+
+Foreach()
+{
+//diziler ve listeler  de ki elemanlar için kullanılan döngü sistemi kaç adet varsa çalıştırılır 
+}
+
+if(koşul)
+{
+//koşul doğru ise
+}
+
+else
+{
+// koşul yanlış ise
+}
+
+While(true)
+{
+ // Sonsuz Döngü olur
+}
+
 ```
 
 
