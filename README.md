@@ -90,7 +90,7 @@ break;
 
 ### Listeler
 
-####ArrayList ve List vardır.
+#### ArrayList ve List vardır.
 
 ```C#
 List<int> yaslar = new List<int>(); //yaslar adinda liste oluşturma.
