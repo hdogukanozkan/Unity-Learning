@@ -2,7 +2,7 @@
 ## C# Learning Files
 
 
-### Invoke Method !
+### MonoBehaviour > Invoke Method !
 
 - Invoke: bir defa kullanım için. zamanlayıcı ayarlanır.
 - InvokeRepating : Sürekli çalışması gereken metotu belirli sürelerle çalıştırmak için kullanılır ve durdurmak için kullanılır.
