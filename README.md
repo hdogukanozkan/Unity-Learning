@@ -1,6 +1,22 @@
 # Unity C# Learning
 ## C# Learning Files
 
+### Class ve Fonksiyon(Method)
+Namespace ise sınıfları kapsar.
+Class = sınıfları temsil eder içerisinde method'lar bulunur.
+Fonksiyon = Method'lar dır aynı anlama gelirler.
+Örnek: 
+Namespace okulun adi.>class sınıfın adları.>fonksiyon da öğrenci adları.
+
+### Erişim (Public Private Protected)
+- Public(Erişilebilir dışarıdan): örnek unity içerisinden değer vermek için falan kullanılabiliyor.
+- Private(Dışarıdan erişim olamaz):Sadece kod dosyasında kullanılır o sınıf dışında kullanılamaz.
+-Protected : Methoda protected erişimi verirsek. Miras almayı yaptığımızda direk kullanım için sadece methodAdi(); kullanılabilir.
+-Miras alma olayı :Başka dosyadı classın içinde ki methodları kullanmak için kullanılan yöntemdir. monobehaviour yazan kısma diğer dosyanın class adı yazılır.
+classAdi degisken = new classAdi(); tanımlaması yapılmalıdır. ve diger class'in methodunu kullanabilmek için degisken.methodAdi(); kullanılır.
+
+
+
 
 ### Temel Fonksiyonlar
 
@@ -31,5 +47,7 @@
 - InvokeRepating : Sürekli çalışması gereken metotu belirli sürelerle çalıştırmak için kullanılır ve durdurmak için kullanılır.
 - Invoke var mı? kontrol için if( IsInvokeing("metot") )
 - Durdurmak için CancelInvoke(); Kullanılır
+
+
 
 
