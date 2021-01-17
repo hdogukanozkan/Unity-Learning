@@ -15,9 +15,6 @@ Namespace okulun adi.>class sınıfın adları.>fonksiyon da öğrenci adları.
 - Miras alma olayı :Başka dosyadı classın içinde ki methodları kullanmak için kullanılan yöntemdir. monobehaviour yazan kısma diğer dosyanın class adı yazılır.
 <p>classAdi degisken = new classAdi(); tanımlaması yapılmalıdır. ve diger class'in methodunu kullanabilmek için degisken.methodAdi(); kullanılır.</p>
 
-
-
-
 ### Temel Fonksiyonlar
 
 #### Start Fonksiyonları
