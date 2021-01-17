@@ -40,6 +40,7 @@ While(true)
 }
 
 ```
+
 ### Diziler
 
 - int[] sayilar= new int[5]; // 5 adet sayiyi bünyesinde barındıran sayılardır
