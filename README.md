@@ -15,6 +15,16 @@
 - LateUpdate(): Lateupdate ise bütün update bütün fonksiyonlar çalıştıktan sonra en son çalışır. Bütün fonksiyonların bitmesini bekler.
 - OnDisable():Obje pasif ise çalışacak fonksiyondur.1 KERE
 
+### Using ve Namespace 
+
+- Namespace nedir? : Class ve methodların çakışmasını önlemek için kullanılır. Verimliliği çok yüksektir. Gruplama için kullanılır. Kod çakışmaları önlenir  gruplama ile önceden hazırlanan kodlar daha rahat çekilir ve kolaylık sağlanır. Namespace ile class havuzu oluşturabiliriz. Sınırsız işlem yapılabilir.
+- Namespace kullanmak için usinge eklenmesi gerekir.  Using NamespaceAdı diye eklenir. Sınıf tanımlamak için de ClassAdi degisken = new ClassAdi();
+- Sınıf methodunu çapırmak için ise degisken.method();
+- NOT: Methodlara dışarıdan değer verme işlemi. String ,int ,float vs.
+- Using : Hazırlanmış kodları çekmek için kullanılan kütüphanelerdir diyebiliriz.
+
+
+
 ### MonoBehaviour > Invoke Method !
 
 - Invoke: bir defa kullanım için. zamanlayıcı ayarlanır.
