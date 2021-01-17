@@ -40,7 +40,29 @@ While(true)
 }
 
 ```
+### Diziler
 
+- int[] sayilar= new int[5]; // 5 adet sayiyi bünyesinde barındıran sayılardır
+
+- int[] sayilar= new int[] {0,15,50,100,12,16}; // sayıların adetini yazmamıza gerek yok virgül bunları sayıyor 
+
+- index sayısı 0 dan başlar sayilar[0] yazıp 1. sayıya ulaşabiliriz.
+
+- Debug.Log(sayilar[1]);  // 2. sayıyı verir. 15 
+
+```C#
+
+String[][] arabalar = new string [3][];  //çok boyutlu dizilerdir.
+
+arabalar [0]= new string [] {"Bmw", "Audi", "Seat"};
+
+arabalar [1]= new string [] {"2010", "2009", "2006","2002"};
+
+arabalar [2]= new string [] {"140hp", "100hp", "90hp"};
+
+Debug.Log(arabalar[0][1]);  // audi
+
+``` 
 
 
 ### Class ve Fonksiyon(Method)
