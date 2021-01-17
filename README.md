@@ -98,7 +98,7 @@ yaslar.Add(50); // veri ekleme
 yaslar.Add(40); // 2.veri
 yaslar.insert(1,90); //1.indexe 1.eleman yerine 90 yazılır eski eleman 2. indexe kayar
 yaslar.remove(40); // 40 değerine sahip elemanı siler
-
+yaslar.clear(); //tüm elemanları siler
 if(yaslar.count>0) // eleman var mı diye kontrol ederiz . varsa ve yoksa olarak işlem yapmak için if else kullanırız.
 {}
 
