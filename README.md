@@ -1,6 +1,17 @@
 # Unity C# Learning
 ## C# Learning Files
 
+### Değişkenler 
+
+```C#
+int i = 0;
+string ad ="dogukan";
+float yaş = 20.5f;
+bool dogrumu = true;
+```
+
+
+
 ### Class ve Fonksiyon(Method)
 Namespace ise sınıfları kapsar.
 Class = sınıfları temsil eder içerisinde method'lar bulunur.
