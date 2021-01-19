@@ -165,6 +165,32 @@ Namespace okulun adi.>class sınıfın adları.>fonksiyon da öğrenci adları.
 - Invoke var mı? kontrol için if( IsInvokeing("metot") )
 - Durdurmak için CancelInvoke(); Kullanılır
 
+### GETCOMPONENT  VE GETCOMPONENTS 
+<p>Objelerin componentlerinde script kodları ile değişiklik yapmak için kullanılanGetCompoenet komutunu gördük.</p>
+<p>GetComponents ise 1 den fazla component ayar için kullanılır. Aynı componentlerin değişiklikleri için kullanılır 2 adet Capsül Colider varsa veya 2 adet ses varsa bunların ayarlarını aynı yapabiliriz. </p>
+
+```C#
+- GetComponent<CapsuleCollider>(); // burada ki tanımlamamız da  objelerin ayarlarına giriş colliderında değişiklik yapabiliriz. 
+- GetComponent<CapsuleCollider>().enabled = false; //pasif hale gelir veya triggerini aç kapa yapabiliriz
+```
+
+#### örnek kullanım için:
+```C#
+CapsuleCollider Capsulum;
+Capsulum =GetComponent<CapsuleCollider>();
+Capsulum.enabled = false;
+```
+
+```C#
+CapsuleCollider[] Capsullerim =GetComponents<CapsuleCollider>
+for(int i=0; i < Capsullerim.Length ; i++)
+{
+      Capsullerim[i].isTrigger = true;  //kapsülün bütün  colider değerlerinde ki trigger aktif oldu.
+}
+```
+
+
+
 
 
 
