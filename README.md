@@ -188,7 +188,14 @@ for(int i=0; i < Capsullerim.Length ; i++)
       Capsullerim[i].isTrigger = true;  //kapsülün bütün  colider değerlerinde ki trigger aktif oldu.
 }
 ```
-
+- Hiyararşi olarak başka objelerin üst dosyasına ulaşabilmesi için GetComponentInParent<> kullanılır.
+```C#
+GetComponentInParent<AudioSource>().mute=true;  // GetComponentsInParent<>
+``` 
+- Hiyararşi olarak başka objelerin alt elemanları yakalamak için kullanılır GetComponentInChildren<> .
+```C#
+GetComponentInChildren<CapsuleCollider>().trigger=true;  // GetComponentsInChildren<> 
+``` 
 
 
 
