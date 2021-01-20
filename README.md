@@ -266,4 +266,24 @@ rigidekle.isKinematic=true; // ve componentin ayarlarını yapabiliyoruz.
 
 ```
 
+### Message BroadCast - Send Message
+
+```C# 
+
+gameObject.SendMessage();  // fonksiyon tetikleyip çağırabiliyoruz.
+gameObject.BrodcastMessage();  // kendi sayfasının için de ki dışında kendi alt objelerinde ki fonksiyonlarını da tetikliyor
+gameObject.SendMessage("ekranabas"); // 2. yöntem ekranabas(); gibi de çağırabilirdik.Ama önemli olan obje ile oluşacak bir durum da çağırabilmek obje iletişimi ile .
+gameObject.BrodcastMessage("ekranabas2");
+
+void ekranabas()
+{
+   Debug.Log("Selamlar");
+}
+
+void ekranabas2()
+{
+   Debug.Log("Selamlar ben başka script dosyasında ki methodum beni üst objemin scripti çağırıyor");
+}
+
+```
 
