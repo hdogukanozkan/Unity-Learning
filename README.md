@@ -197,7 +197,31 @@ GetComponentInParent<AudioSource>().mute=true;  // GetComponentsInParent<>
 GetComponentInChildren<CapsuleCollider>().trigger=true;  // GetComponentsInChildren<> 
 ``` 
 
+### Obje Yakalama Değişiklik yapma.
 
+<p> Oyunlarda değişiklik yapmamız GetComponent ' te olduğu gibi bazı component değerlerini açıp kapamamız gerekir örneğin silahtan çıkan mermi adama deydiğinde yok olması tepki vermesi. Topun kaleye girdiğinde kaledeki filelerin tepki vermesi gibi gibi objeler arası etkileşim olması gerekir bazı componentlerin açılıp kapanması gerekir ve çok önemlidir! </p>
+
+```C#
+GameObject Ben;
+Ben=GameObject.Find("Obje Adi"); // Burada kullanım kolaylığı amacıyla tanımlama yapıyoruz.
+Ben.GetComponent<degistirilecek component>()degisken = degisiklik; // gibi tanımlama yapılabilir daha doğru olur.
+GameObject.Find("Obje adi").GetComponent<degistirilecek component>()degisken = degisiklik; // obje ara parametresi find'dir. Obje aradık bulduk nokta koyup GetComponent parametresi ile componentlerine erişim ve değişiklik yapıyoruz.
+GameObject.Find("Obje adi/alt_obje");  //Hiyararşi düzenin de alt objeler olabilir ulaşmak  için bu yöntem kullanılır.
+```
+<p>Taglar çoklu kod yazma ve kullanım kolaylığı amacıyla kullanılır düşmanların hepsinde aynı tagı kullanıp 1 kod ile hepsini aynı işlemi gerçekleştirebiliriz</p>
+```C#
+Ben = GameObject.FindWithTag("Dusman");
+Ben.GetComponent<degisiklikyapılacak>().degisken=degistir;  
+```
+```C#
+GameObject[] =cokluobje;
+cokluobje=GameObject.FindGameObjectsWithTag("Player");
+
+foreach(var item in cokluobje)
+{
+     item.GetComponent<degiscekcomponent>().yas=3; // yas degiskenleri bütün player tagına sahip olan objelerde uygulanacak.
+}
+```
 
 
 
