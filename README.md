@@ -216,6 +216,7 @@ Ben.GetComponent<degisiklikyapılacak>().degisken=degistir;
 ```
 
 ```C#
+
 GameObject[] =cokluobje;
 cokluobje=GameObject.FindGameObjectsWithTag("Player");
 
@@ -223,6 +224,7 @@ foreach(var item in cokluobje)
 {
      item.GetComponent<degiscekcomponent>().yas=3; // yas degiskenleri bütün player tagına sahip olan objelerde uygulanacak.
 }
+
 ```
 
 
