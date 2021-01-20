@@ -226,6 +226,44 @@ foreach(var item in cokluobje)
 }
 
 ```
+###  GameObject ve gameObject farkı
 
+<p> GameObject ve gameObject farklıdır. küçük ile başlayan içinde bulunduğumuz scriptin objesi anlamına gelir.
+
+```C#
+
+CapsuleCollider capsulum = gameObject.GetComponent(typeof(CapsuleCollider)) as CapsuleCollider;
+capsulum.isTrigger = true;
+if (gameObject.GetComponent("CapsuleCollider") as CapsuleCollider)
+{
+   gameObject.name = "Ben değiştirdim"; // eğer obje varsa objenin adını değiştirir.
+}
+
+Camera cam = (Camera)FindObjectOfType(typeof(Camera));
+if(cam) //değer true ile kıyaslar true ise 
+{
+    Debug.Log("EVET KAMERA VAR "+cam.name);
+}
+
+Light isik = (Light)FindObjectOfType(typeof(Light));
+if(Light) //değer true ile kıyaslar true ise 
+{
+    Debug.Log("EVET IŞIK VAR "+ Light.name);
+}
+
+```
+
+### OBJELERİ AKTİF PASİF YAPMA
+
+```C#
+
+gameObject.SetActive(false); // pasif yapar
+gameObject.SetActive(true); // aktif yapar
+if(gameObject.activeSelf) // objenin durumunu öğrenmek için kullanılır aktif mi pasif mi 
+if ( gameObject.CompareTag("dusman")) // tagı düşman ise şunları şunları yap diye biliyoruz burada
+Rigidbody rigidekle= gameObject.AddComponent<Rigidbody>() as Rigidbody; // objeye component eklemek için kullanılabilir.
+rigidekle.isKinematic=true; // ve componentin ayarlarını yapabiliyoruz.
+
+```
 
 
