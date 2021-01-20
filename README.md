@@ -209,10 +209,12 @@ GameObject.Find("Obje adi").GetComponent<degistirilecek component>()degisken = d
 GameObject.Find("Obje adi/alt_obje");  //Hiyararşi düzenin de alt objeler olabilir ulaşmak  için bu yöntem kullanılır.
 ```
 <p>Taglar çoklu kod yazma ve kullanım kolaylığı amacıyla kullanılır düşmanların hepsinde aynı tagı kullanıp 1 kod ile hepsini aynı işlemi gerçekleştirebiliriz</p>
+
 ```C#
 Ben = GameObject.FindWithTag("Dusman");
 Ben.GetComponent<degisiklikyapılacak>().degisken=degistir;  
 ```
+
 ```C#
 GameObject[] =cokluobje;
 cokluobje=GameObject.FindGameObjectsWithTag("Player");
