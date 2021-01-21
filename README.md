@@ -286,4 +286,28 @@ void ekranabas2()
 }
 
 ```
+### Obje yok etme silme 
+
+<p> objeleri yok etmek silmek için kullanılan script kodunu göreceğiz destroy komutunu kullanırız.Süreli destroy içinde kullanılır.</p>
+
+```C#
+
+Destroy(gameObject); // komut çalıştığında direk script dosyasının bulunduğu obje silinir.
+Destroy(gameObject,2f); // 2 saniye sonra silinir.
+Destroy(this); // this bu demek yani bu komut script dosyasını silmek için kullanılır.
+
+```
+
+#### Component silmek script dosyası ile
+
+```C# 
+
+Destroy(GetComponent<CapsuleCollider>());
+
+```
+
+### Prefab Oluşturma
+
+<p> Yeni sahne oluşturmak için File kısmından new Scane oluşturuyoruz ctrl s ile kaydediyoruz isim veriyoruz. Sahneler arası obje vs script dosyası taşıma işlemini prefab deniyor.  Objeyi örneklendirmek(prefab yapmak) için  objeyi tutup aşşağıda proje kısmında dosyalar kısmına bırakıyoruz ve artık prefab oldu. Artık çağırılabilir kalıp haline geldi Sahneler arası kullanabilir Ve bütün özellikleri geldi .</p>
+<p> Prefab güncellemek için tüm sahnelerde open prefab yazısına tıklayıp değiştirebiliriz veya objeler kısmında küçük ok tuşuna basabiliriz. </p>
 
