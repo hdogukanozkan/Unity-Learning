@@ -311,3 +311,83 @@ Destroy(GetComponent<CapsuleCollider>());
 <p> Yeni sahne oluşturmak için File kısmından new Scane oluşturuyoruz ctrl s ile kaydediyoruz isim veriyoruz. Sahneler arası obje vs script dosyası taşıma işlemini prefab deniyor.  Objeyi örneklendirmek(prefab yapmak) için  objeyi tutup aşşağıda proje kısmında dosyalar kısmına bırakıyoruz ve artık prefab oldu. Artık çağırılabilir kalıp haline geldi Sahneler arası kullanabilir Ve bütün özellikleri geldi .</p>
 <p> Prefab güncellemek için tüm sahnelerde open prefab yazısına tıklayıp değiştirebiliriz veya objeler kısmında küçük ok tuşuna basabiliriz. </p>
 
+### Transform translate ayarları
+
+transform işlemleri  için script dosyası oluşturuyoruz.
+
+transform adresleri position , rotation ve scale değerlerini alabilmek öğrenmek için ;
+
+```C#
+
+Debug.Log(transform.position);
+
+Debug.Log(transform.rotation);
+
+Debug.Log(transform.localScale);
+
+```
+
+#### Vector nedir ?
+
+herhangi bir objenin yönlerini ve pozisyonlarını değiştirmemizi sağlıyor.Float türünde değerler alırlar.
+
+#### Vector tanımlama
+
+```C#
+
+Vector3 pozisyon1; //vector tanımlamak
+Vector3 pozisyon2;
+pozisyon1 = new Vector3(1f, 2f, 1f);
+pozisyon2 = new Vector3(1f, 2f, 1f);
+
+```
+
+#### Vector tanımlama 2
+
+``` C#
+
+   Vector2 sa;  // 2boyutlu oyunlar için varsayılan floattır int olması için vector2int kullanılır  vektor 2 de z yoktur bu yüzden 2 boyut
+   Vector3 sa1; // 3boyutlu oyunlar için 3 boyutlu içinde aynı kural geçerlidir vector3int.
+   Vector4 asd; // modellemeydi sanırım bölgelendirmeler 
+   Quaternion d; //  objeler arası mesafe için
+
+```
+<p>
+Quaternion : Objelerin arasında ki mesafeyi ölçüyoruz bilmek önemli.
+Transform değerlerini değiştirmek için de ;
+Time.deltaTime: Saniyede işlem yapmak için daha yavaşlatır veya daha hızlanıdırır objeyi kilometre hesabı gibi araçlarda.
+</p>
+
+```C#
+         transform.Translate(new Vector3Int(3,5,1)); // mantık olarak 2 si de aynıdır.
+         transform.Translate(new Vector3(3f,5f,1f)); // - değer ters yöne gitmeyi sağlar
+         transform.Translate(new Vector3(3f,5f,1f) * Time.deltaTime); // daha yavaş gider süre ayarlaması yapabiliyoruz yani
+         transform.Translate(Vector3.back* 5f * Time.deltaTime); //vector ün içerisinde hazır komutlar vardır back,right,left,'i kullandığımızda geriye doğru gidiyor hızını arttırmak içinde 5f ile çarpabiliriz veya daha fazla sayılar ile hıza bağlı
+         Debug.Log(Vector3.Magnitude(transform.position)); //vectorun uzunluğunu ölçen komuttur.
+         Debug.Log(Vector3.SqrMagnitude(transform.position)); //gene uzunluğu hesaplar ama karesini alır 2 ise 4 4 ise 16 gibi gibi.
+         Debug.Log(transform.position.normalized); // büyüklüğü her zaman 1 değerinde döndürür.
+```
+
+#### Vector konum kontrol
+
+``` C#
+ //1.yöntem
+         if (Vector3.Equals(pozisyon1, pozisyon2))
+        {
+            Debug.Log("Konumları aynı");
+        }
+        else
+        {
+            Debug.Log("konumları farklı");
+        }
+
+        //2.yöntem
+        if(pozisyon2 == pozisyon1)
+        {
+            Debug.Log("Konumları aynı");
+        }
+        else
+        {
+            Debug.Log("Aynı değil");
+        }
+```
