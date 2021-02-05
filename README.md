@@ -480,6 +480,7 @@ Time.deltaTime: Saniyede işlem yapmak için daha yavaşlatır veya daha hızlan
         //DÖNÜŞLERDE WORLD VE SELF KOMUTLARI KULLANILIR.
         transform.Rotate(new Vector3 (90f,0f,0f),Space.Self); //kendini referans alarak
         transform.Rotate(new Vector3 (90f,0f,0f),Space.World); // dünya eksinini referans alarak dönüş yaptırır.
+        
         //NEW KULLANIMI HAKKINDA ÖNEMLİ
         
         hedef.transform.Rotate(90f,0f,0f,Space.Self); //Burada new kullanımına gerek yok dışardan public olarak obje alıyoruz.
@@ -487,14 +488,13 @@ Time.deltaTime: Saniyede işlem yapmak için daha yavaşlatır veya daha hızlan
 
         //NEW KULLANIMI HAKKINDA ÖNEMLİ 2
             /*
-public Vector3 benimyonum; gibi yaparsak ta new demeden sayfanın istediğimiz yerinde çekebiliriz. Mustafanın sorguduğu yazım şekline göre new olmazsa olmaz. Ancak bu şekilde tanımlanırsa sayfa içerisinde hitap edebiliriz.
+public Vector3 benimyonum; gibi yaparsak ta new demeden sayfanın istediğimiz yerinde çekebiliriz. 
+Mustafanın sorguduğu yazım şekline göre new olmazsa olmaz. Ancak bu şekilde tanımlanırsa sayfa 
+içerisinde hitap edebiliriz.
 
 Mesela;
-
 Vector3 benimyonum; diye tanımlama yaptık diyelim ki, bu vectore yeni bir vector değeri atayacaksak eğer;
-
 benimyonum= new Vector(5,2,3); gibi tanımlarız. Yani sayfa içerisinde tanımlanmayan yeni bir vector oluşturacaksak eğer new ekini kullanıyoruz.
-
 Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi dersler dilerim. Sevgiler.            
             */
 
