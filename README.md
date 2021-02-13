@@ -485,7 +485,8 @@ Time.deltaTime: Saniyede işlem yapmak için daha yavaşlatır veya daha hızlan
         
         hedef.transform.Rotate(90f,0f,0f,Space.Self); //Burada new kullanımına gerek yok dışardan public olarak obje alıyoruz.
         hedef2.transform.Rotate(90f,0f,0f,Space.World); // dünya eksinini referans alarak dönüş yaptırır.
-
+```
+<p>
         //NEW KULLANIMI HAKKINDA ÖNEMLİ 2
             /*
 public Vector3 benimyonum; gibi yaparsak ta new demeden sayfanın istediğimiz yerinde çekebiliriz. 
@@ -497,7 +498,47 @@ Vector3 benimyonum; diye tanımlama yaptık diyelim ki, bu vectore yeni bir vect
 benimyonum= new Vector(5,2,3); gibi tanımlarız. Yani sayfa içerisinde tanımlanmayan yeni bir vector oluşturacaksak eğer new ekini kullanıyoruz.
 Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi dersler dilerim. Sevgiler.            
             */
+           </p>
 
+           ```C#
+
+           /* Burada yaptığımız print yönlendirmeleri objelerin konumlarını öğrenmek için kullanıyoruz mevcut pozisyonlarını bize veriyor */
+        print(hedef.transform.localPosition);
+        print(hedef.transform.localRotation); // ilerde görücez
+        print(hedef.transform.localScale);
+
+
+
+           /* look at komutu bir objeyi takip etmek için kullanırız */
+        hedef2.transform.LookAt(hedef); //bu komut ile objemiz diğer objemize sürekli kafasını çevirerek kontrol eder örnek olarakta güvenlik kamerası gibi düşünebiliriz
+        hedef2.transform.LookAt(hedef,Vector3.left); //
+
+
+        /*Eğer bir objenin alt childlerına ulaşmak için neler yaparız ?*/
+
+        GameObject aramasonuc =  transform.Find("GameObject").gameObject; // burada GameObject adında obje arıyoruz ve aramasonuc degiskenine atıyor.
+
+        aramasonuc.name="Bendegistirdim"; //burada bulduğu objenin adını name ile değiştirdim
+
+        Debug.Log(transform.childCount); // bir objenin altında ki ne kadar çocuk varsa sayısını bana göster diyebiliyoruz. ebevyn sayısını almaz sadece cocuk sayısını hesaplar
+
+        Debug.Log(transform.hierarchyCount); // ebevyn ve altçocuklara kadar tüm her şeyi hesaplar de dahil olmak üzere toplam sayıyı gösterir. çocuk + ebevyn sayısı
+
+        GameObject aramasonuc =  transform.Find("GameObject/yeniobje").gameObject; // burada GameObject altındaki yeniobje adında objeyi yakalıyoruz.
+
+        /* Bütün çocuk objelerin adlarını yazdırmak */
+        for(int i = 0;i<transform.childCount;i++)
+        {
+            Debug.Log(transform.GetChild(i).name); // indis numarasını i olan 0 1 2 3 olarak artan ve indis numarasına göre tüm objelerin name'lerini alıp debuglog ile yazdırıyoruz.
+
+            if(i == 1)
+            transform.GetChild(i).GetComponent<CapsuleCollider>().enabled = false; // indis numarası 1 olan objenin görünürlüğünü varlığını pasif yapıyoruz.
+
+            /* VEYA İSME GÖRE OBJEYİ BULMA*/
+            if(transform.GetChild(i).name==Kamera)
+            transform.GetChild(i).GetComponent<CapsuleCollider>().enabled = false; // Burada ismi kamera olan objenin varlığını görünürlüğünü kapatıyoruz bu en çok kullanılan yöntemdir isimleri taglar çok önemli !
+
+        }
 
 
 
