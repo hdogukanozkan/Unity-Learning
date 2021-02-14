@@ -485,7 +485,9 @@ Time.deltaTime: Saniyede işlem yapmak için daha yavaşlatır veya daha hızlan
         
         hedef.transform.Rotate(90f,0f,0f,Space.Self); //Burada new kullanımına gerek yok dışardan public olarak obje alıyoruz.
         hedef2.transform.Rotate(90f,0f,0f,Space.World); // dünya eksinini referans alarak dönüş yaptırır.
+
 ```
+
 <p>
         //NEW KULLANIMI HAKKINDA ÖNEMLİ 2
             /*
