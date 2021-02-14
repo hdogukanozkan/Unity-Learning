@@ -501,7 +501,7 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
 ```
 
 
-           ```C#
+```C#
 
            /* Burada yaptığımız print yönlendirmeleri objelerin konumlarını öğrenmek için kullanıyoruz mevcut pozisyonlarını bize veriyor */
         print(hedef.transform.localPosition);
