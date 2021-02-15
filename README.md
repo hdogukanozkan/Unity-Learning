@@ -544,3 +544,49 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
 
 
 ```
+
+<p>Burada objelerin hiyararşi ayarlarını yapmayı alt obje eklemeyi görüyoruz bunun için SetParent kullanarak aile hiyararşi oluşturabiliyoruz.</p>
+
+```C#
+
+    public Transform parent;  // parent adında objeyi atıyoruz
+    public Gameobject child;  // child adında objeyi atıyoruz.
+
+        child.transform.SetParent(parent); // parent objesinin altına child objesini atıyor parent üstte child alta geçiyor hiyerarşi olarak
+        /* Bunu yaptığımızda child objesinin değerleri kendi transform değerlerini kaybediyor ve değerleri 0'lanıyor Eğer değerlerin 0 lan masın olduğu gibi kalsın sadece hiyararşi kurulsun istiyorsak false değerini kullanıcaz */
+        child.transform.SetParent(parent,false);
+
+```
+
+<p>Quaternion ; Dönüş işlemlerinde kullanılması tavsiye edilen daha stabil bir koddur.Hataları minimuma indirir. </p>
+
+```C#
+
+ 
+    public Transform hedef;
+
+            /* Objenin bir objeyi takip etmesi izlemesi*/
+        Vector3 fark = hedef.position - transform.position;  // aradaki mesafeyi ölçüyoruz
+        transform.rotation = Quaternion.LookRotation(fark,Vector3.up); // burada bizim objemizin transform.rotation değerini quaternion komutunu kullanarak dönüşleri takibini sağlıyoruz sağlıyoruz
+
+        float angle = Quaternion.Angle(transform.rotation , hedef.rotation); //2 vector arasında ki mesafeyi derece olarak verir bize 
+        print(angle);
+
+        transform.rotation = Quaternion.Inverse(hedef.rotation); //objenin pozisyonun tam tersini uygular ayna gibi açılarının zıttını alır. Tam tersi hareket inverse komutu ile sağlanır.
+
+        transform.rotation = Quaternion.Euler(90,0,0); // objenin açısı 90 yapar 
+
+        transform.rotation = Quaternion.FromToRotation(Vector3.up,transform.forward); //objenin sürekli dönüşünü sağlayabiliyoruz kendi ekseninde yönünü belirliyoruz 
+
+
+        Vector3 bizimpozisyon = new Vector3(140,70,90);
+        Quaternion yenipozisyon = Quaternion.Euler(bizimpozisyon);
+
+        transform.rotation = yenipozisyon;  // burada 140 70 90 açısını oluşturuyoruz ve oluşturduğumuz vector 3 açısını quaternion komutuyla birleştirip objenin rotation değerlerine atıyoruz ve objenin değerleri 140 70 90 oluyor.
+
+        Quaternion.identity; // dönüş yok rotation yok varsa sıfırla demektir bu kod. 
+
+        transform.rotation = Quaternion.identity; //şuan komut yazdığımız scriptin objesinde ki bütün rotation değerleri 0 0 0 olur sıfırlanır.
+
+```
+
