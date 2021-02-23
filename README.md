@@ -165,6 +165,17 @@ Namespace okulun adi.>class sınıfın adları.>fonksiyon da öğrenci adları.
 - Invoke var mı? kontrol için if( IsInvokeing("metot") )
 - Durdurmak için CancelInvoke(); Kullanılır
 
+```C#
+public void oc()
+    {
+        Debug.Log("13");
+    }
+
+    InvokeRepeating("oc", 5f, 4f);
+
+```
+
+
 ### GETCOMPONENT  VE GETCOMPONENTS 
 <p>Objelerin componentlerinde script kodları ile değişiklik yapmak için kullanılanGetCompoenet komutunu gördük.</p>
 <p>GetComponents ise 1 den fazla component ayar için kullanılır. Aynı componentlerin değişiklikleri için kullanılır 2 adet Capsül Colider varsa veya 2 adet ses varsa bunların ayarlarını aynı yapabiliriz. </p>
