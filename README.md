@@ -166,6 +166,7 @@ Namespace okulun adi.>class sınıfın adları.>fonksiyon da öğrenci adları.
 - Durdurmak için CancelInvoke(); Kullanılır
 
 ```C#
+
 public void oc()
     {
         Debug.Log("13");
