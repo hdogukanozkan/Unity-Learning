@@ -602,3 +602,26 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
 
 ```
 
+### Object İnstantiate - obje oluşturma prefabdaki objeleri çekme, prefab objelerini kod ile çağırma
+
+```C#
+
+    public GameObject yarat;  //obje tanıttık ve prefab objeyi yarat değişkenine atadık
+    public GameObject yeniobje; 
+
+        Instantiate(yarat); // objeyi orjinal direk çağırır olduğu konumda yaratır 
+        Instantiate(yarat, transform); //objeyi çağırır child olarak atar
+        Instantiate(yarat, transform.position, transform.rotation); // objeyi yaratır position ve rotation değerlerini şuan ki objemize göre alır üst üste çakışmalı yaratır yani
+        Instantiate(yarat, transform.position, Quaternion.identity);// objenin position değerini şuan ki objemize göre veririz quaternion.identity ile rotation değerlerini almayız onlar orjinal neyse prefab haliyle kalır.
+        Instantiate(yarat, yeniobje.transform.position, Quaternion.identity); //yeni başka bir objenin position değerine göre atama yaptık başka objeye göre değer alır position
+        Instantiate(yarat, new Vector3(2f, 3f, 5f), Quaternion.identity); // position değerini kendimiz 2 3 ve 5 olarak atadık el ile değer girdik
+        Instantiate(yarat, new Vector3(transform.position.x, 3f, 2f), Quaternion.identity); // burada x değerini kendi objemin x i ile aynı aldım kalan y ve z değerlerini 3f ve 2f olarak atadım.
+
+        
+
+        //component erişmek ve değişiklikler yapmak için 
+        GameObject cube = Instantiate(yarat, new Vector3(transform.position.x, 3f, 2f), Quaternion.identity);  // objeyi cube adında ki değişkene atıyoruz 
+        cube.GetComponent<BoxCollider>().enabled = false; // ve objemizin boxcolliderına erişip değişikliğimizi sağlıyoruz
+
+```
+
