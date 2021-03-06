@@ -625,3 +625,50 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
 
 ```
 
+### UNİTY MATHF | HİDE FLAGS | ÇEŞİTLİ İPUÇLARI | DEĞİŞKEN METHODLARI 
+
+<p> matematik işlemlerimizi yaparken math sınıfını kullanarak gerçekleştiriyoruz.</p>
+
+```C#
+
+    // Mathf - Matematiksel İşlemler
+
+        print(Mathf.Abs(-2.5f)); //mutlak değerini döndürür
+
+        //Ceil sayıyı daha büyük veya eşit sayıya yuvarlar
+        print(Mathf.Ceil(5.0f));  //5
+        print(Mathf.Ceil(5.1f));  //6
+        print(Mathf.Ceil(5.7f));  //6
+        print(Mathf.Ceil(6.0f));  //6
+        print(Mathf.Ceil(-5.0f)); //-5
+        print(Mathf.Ceil(-5.2f)); //-5
+
+        //Floor sayıyı en küçük-yakın veya eşit sayıya yuvarlar
+        print(Mathf.Floor(5.0f));  //5
+        print(Mathf.Floor(5.1f));  //5
+        print(Mathf.Floor(5.7f));  //5
+        print(Mathf.Floor(6.0f));  //6
+        print(Mathf.Floor(-5.0f)); //-5
+        print(Mathf.Floor(-5.2f)); //-6
+
+        //Round sayıyı .5 olursa bir üst sayıya yuvarlar ama bir üst sayı  
+        //eğer tek ise 10.5 => 11.0 yapmaz 10.0 yapar
+        //eğer çift ise 11.5 => 12.0 yapar 12.0 cevab olur
+        print(Mathf.Round(5.0f));  //5
+        print(Mathf.Round(5.1f));  //5
+        print(Mathf.Round(5.7f));  //6 
+
+        float saglik = -5;
+        print(Mathf.Clamp(saglik,1,100)); // saglık en az 1 en fazla 100 olacak demek  -5 i 1 olarak gösterir.
+        print(Mathf.Clamp01(saglik)); // saglik değeri eğer -negatif ise 0 +pozitif ise 1 döndürür.
+
+        print(Mathf.Max(2.4f, 1.8f)); // en yüksek sayıyı bize döndürür
+        print(Mathf.Min(2.4f, 1.8f)); // en düşük sayıyı bize döndürür
+
+        float[] degerler = { 1.5f, 2.2f, 9.9f };
+        print(Mathf.Max(degerler));
+        print(Mathf.Min(degerler));
+
+
+
+```
