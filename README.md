@@ -672,3 +672,71 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
 
 
 ```
+
+ ### Değişkenler için çeşitli methodlar- Örnek ve kullanımı
+
+```C#
+
+    private string ad = "olcay";
+    private string ad2 = "mehmet";
+    private int sayi = 50;
+
+        string kopyalanan =(string) ad.Clone();
+        print(kopyalanan);
+        print(ad.GetType()); //bize değişkenin tipini yazdırır string diye.
+
+
+        //ad değişkeninin içinde olay var mı
+        if (ad.Equals("Olcay")) 
+        {
+            print("Doğru");
+        }
+        else
+        {
+            print("Yanlış");
+        }
+
+
+        //ad değişkeninin sonunda ki harf ve kelimeyi arar cay - ay - y gibi istediğimizi aratabiliriz
+        if (ad.EndsWith("y"))  
+        {
+            print("Evet sonu y");
+        }
+        else
+        {
+            print("hayır değil");
+        }
+
+        //ad değişkenin başına bakar  küçük büyük harf duyarlı değil aynı olmak zorunda
+        if (ad.EndsWith("ol"))
+        {
+            print("Evet başı ol");
+        }
+        else
+        {
+            print("hayır değil");
+        }
+
+        string metin = "Bu Devirde Araba Alınmaz Yeğenim akp oy ver";
+        print(metin.ToUpper()); // bütün harfleri büyük yapar
+        print(metin.ToLower()); // bütün harfleri küçük yapar
+
+        print(sayi.ToString()); // ilerde türü farklı olduğu için hata verebilir bu yüzden tostring kullanılmalı
+        print(metin.Replace(" ","/" )); //metinin içinde 1. parametre arar ve 2. parametre çevirir bütün boşluklara / işareti koyar gibi
+        print(metin.Trim()); // başındaki ve sonunda ki boşlukları temizler metinin.
+        print(metin.TrimStart());// baştaki boşlukları temizler
+        print(metin.TrimEnd()); // metnin sonunda ki boşlukları temizler
+        print(metin.Substring(2,10)); //2. indisten başla  10 ileri kadar al yani 0. harfi 1. harfi 2. harften başlar 10 tane ileri kadar alır
+        string[] parcala = metin.Split(' '); //boşlukları referans alarak her kelimeyi parçalar halinde bölünür
+        foreach (var item in parcala)
+        {
+            print(item);
+        }
+
+        // örnek kullanım için
+        metin = metin.Trim();
+        metin = metin.ToLower();
+        metin = metin.Replace(" ", "/");
+        metin = metin.TrimStart().TrimEnd(); // çoklu kullanım
+
+```
