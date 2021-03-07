@@ -741,3 +741,6 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
         metin = metin.TrimStart().TrimEnd(); // çoklu kullanım
 
 ```
+
+
+### Hide Flags Yöntemleri ve Çeşitli İpuçları
