@@ -727,6 +727,7 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
         print(metin.TrimStart());// baştaki boşlukları temizler
         print(metin.TrimEnd()); // metnin sonunda ki boşlukları temizler
         print(metin.Substring(2,10)); //2. indisten başla  10 ileri kadar al yani 0. harfi 1. harfi 2. harften başlar 10 tane ileri kadar alır
+        
         string[] parcala = metin.Split(' '); //boşlukları referans alarak her kelimeyi parçalar halinde bölünür
         foreach (var item in parcala)
         {
