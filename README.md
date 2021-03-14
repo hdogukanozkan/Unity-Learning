@@ -743,4 +743,69 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
 ```
 
 
-### Hide Flags Yöntemleri ve Çeşitli İpuçları
+### Hide Flags Yöntemleri ve Çeşitli İpuçları ! Önemli
+
+```C#
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+[AddComponentMenu("Dogukan/kendiscriptdosyam")]  //script dosyasına özel component ve menü oluşturabiliyoruz add component
+
+//Menüye script dosyası eklediğimizden birden fazla componentti de içinde ekleyebiliriz fizik componenti gibi gibi bir script dosyasıyla birden fazla iş yaptırabiliriz.
+[RequireComponent(typeof(Rigidbody))] //bu script eklendiğinde bu componenti de ekleyeceksin demek (silinmez !) script dosyasını silmeden silinmez
+
+
+public class pasabahce : MonoBehaviour
+{
+    public Color ad1;
+    public Texture ad2;
+    public AudioClip ad3;
+
+    [Header("Burası karakter ayarları")] //kategorize etmek için
+    public string saglik;
+    public string para;
+    public string level;
+
+    [Header("Burası Düşman ayarları")] //kategorize etmek için
+    public string Dusman_saglik;
+    public string Dusman_para;
+    public string Dusman_level;
+
+
+    [HideInInspector] // burası da inspector panelinde public şeylerin gözükmemesi için de kullanılabilir bunun altına yazdıklarımız gözükmez 
+    public string ad;
+
+    [Range(1, 6)]
+    public int deger; // değerimiz 1 ile 6 arasında olacaktır kısıtlanıyor. min 1 max 6 olur
+
+    [Min(5)]
+    public int deger2; // minimum değeri 5 olacaktır.
+
+    [Multiline(7)] 
+    public string deger3; //string içeriğin yazı kutucuğunu büyültür ve 7 satırlık büyük bir text alanı sağlar
+
+    [Tooltip("Bu benim notum açık mı kapalı mı ayarı buradan")]
+    public bool deger4; //bool değişkeninde tik atıp atmama durumlarında bilgi verici metin olur
+
+    [ContextMenu("Benim Menüm")] // Burada prefabların olduğu script dosyamın bulunduğu componentin menüsüne eklenir ve oradan tıklandığında fonksiyon çalışır
+   // [ContextMenu("Benim Menüm",false,1)] sırada önceliğini belirler 1 2 3 gibi verilebilir false ve true olayını bilmiyorum.
+
+    void BenimMenüm()
+    {
+        print("menüden geldim");
+    }
+
+
+    void Start()
+    {
+        gameObject.hideFlags = HideFlags.HideInHierarchy; // hiyararşide görünmesini engeller işleri bitmiş objeleri kalabalığı önlemek adına kulannılır.
+        gameObject.hideFlags = HideFlags.HideInInspector; //inspector panelini tamamen gizler değişiklik yaptırmaz yalnışlıkla değişiklik yapılmasını önlemek adına
+        gameObject.hideFlags = HideFlags.NotEditable; // inspector panelini gösterir ama değişiklik yaptırmaya izin vermez
+        gameObject.hideFlags = HideFlags.DontSave; //nesnede yaptığımız değişiklikleri kaydetmez
+    }
+
+ 
+}
+
+```
