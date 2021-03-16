@@ -809,3 +809,110 @@ public class pasabahce : MonoBehaviour
 }
 
 ```
+
+### Fizik İşlemleri
+
+<p>
+    Box collider , Capsule collider , Sphere collider  Collider bizim görmemiş olduğumuz çevresinde çizgi. 
+    Her objenin kendine özgü collideri olmak zorunda.
+    Terrain kısmı haritamızdır bütün dağlar ağaçlar vs.
+    
+</p>
+<p>
+    Wheel Collider araba oyunu için teker yapımına yarayan kullanılan colliderdir. Süspansiyon gibi ince detay teker ayarları yapılır.
+<p>
+    Character Controller - Karakter kontroller  hazır basit karakterin ön ayarları için kullanılır 
+    1-Slope Limit yokuş yukarı çıkılabilecek açı derecesi
+    2-Step offset basamak 
+    3-skin width ince detay karakterin sıkışması falan sanırım
+    4-min move distance ise titreşimi en aza indiren yerdir
+</p>
+
+
+```C#
+
+
+/* not1
+eğer addan değil tagdan yakalanacaksa obje 
+
+(collision.gameObject.name== "Sphere (1)") 
+(collision.CompareTag("dusman"))
+(other.gameObject.name == "Sphere (1)")
+(other.CompareTag("dusman"))
+*/
+
+/* not2
+Eğer çarpışma sonrası obje yok etmek istiyorsak 
+
+Destroy(gameObject); BURADA SCRİPT KODUNUN BULUNDUĞU OBJE
+Destroy(other.gameObject); veya Destroy(collision.gameObject)  BURADA DA ÇARPTIRDIĞIMIZ OBJELERİN YOK EDİLMESİ
+
+YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEMLERİNİ İF İN İÇERİSİNDE YAPIYORUZ !
+
+*/
+
+//Bütün objeler ile etkileşimi gösterir zemin vs tüm objelerle iletişim de etkilenir
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("etkileşim var ");
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        Debug.Log("Etkileşim sürüyor");
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        Debug.Log("Etkileşim bitti");
+    }
+
+// 2. seçenek belirli objeler veya tag grubunda ki objeler arasında etkileşim
+ private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name== "Sphere (1)") //adı Sphere (1) olan obje ile iletişimde çalışacak kod
+        {
+            Debug.Log("etkileşim var ");
+        }
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.name == "Sphere (1)") //adı Sphere (1) olan obje ile iletişimde çalışacak kod
+        {
+            Debug.Log("Etkileşim sürüyor");
+        }
+        
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.name == "Sphere (1)") //adı Sphere (1) olan obje ile iletişimde çalışacak kod
+        {
+            Debug.Log("Etkileşim bitti");
+        }
+        
+    }
+
+    // Objelerde rigidbody olma zorunluluğumuz kalmadı bu objeler boşta çalışmaz çünkü collider kısmında ki istrigger özelliği açık olmalı 
+   //etkileşimleri istrigger özelliği ile bize döndürür. En az 1 tanesi açık olmalı 
+  private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Sphere (1)") //adı Sphere (1) olan obje ile iletişimde çalışacak kod
+        {
+            Debug.Log("etkileşim var ");
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.name == "Sphere (1)") //adı Sphere (1) olan obje ile iletişimde çalışacak kod
+        {
+            Debug.Log("Etkileşim sürüyor");
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.name == "Sphere (1)") //adı Sphere (1) olan obje ile iletişimde çalışacak kod
+        {
+            Debug.Log("Etkileşim bitti");
+        }
+    }
+
+```
+
