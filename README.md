@@ -810,7 +810,7 @@ public class pasabahce : MonoBehaviour
 
 ```
 
-### Fizik İşlemleri
+### Fizik İşlemleri  - Collider - RigidBody
 
 <p>
     Box collider , Capsule collider , Sphere collider  Collider bizim görmemiş olduğumuz çevresinde çizgi. 
