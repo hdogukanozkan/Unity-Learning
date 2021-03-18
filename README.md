@@ -961,5 +961,4 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     Bounce Min Velocity => sekme hızı 0.5 deriz kuvvetin gelişine göre minimum değer veririz.
     Contact Distance => Mesafe iletişimi temas halinde yani herhangi bir titreşim olmasını önlemek 
     
-
 </p>
