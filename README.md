@@ -892,6 +892,11 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 
     // Objelerde rigidbody olma zorunluluğumuz kalmadı bu objeler boşta çalışmaz çünkü collider kısmında ki istrigger özelliği açık olmalı 
    //etkileşimleri istrigger özelliği ile bize döndürür. En az 1 tanesi açık olmalı 
+   /*
+    Eğer objelerde ki rigidBody Komponentlerini kaldırırsak onTrigger özelliği çalışmıyor.
+
+    Yani OnTrigger Metodunun çalışması için etkileşim içinde olan objelerden en az birinde Collider ve RigidBody Komponenti ekli olması gerek.
+   */
   private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Sphere (1)") //adı Sphere (1) olan obje ile iletişimde çalışacak kod
@@ -916,3 +921,25 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 
 ```
 
+### 3D | JOİNTLER 1
+
+<p>
+    Fixed Joint(component) kullanıyoruz burada karşımıza 2 şey çıkıyor temel olarak 1.si bağlanacak objeyi seçiyoruz 2.si tam olarak bilemediğim connected articulation body.
+    1. de bir obje seçiyoruz ve bu obje ile aralarından bir bağ oluşuyor bu bağ sayesinde 1. obje hareket ettiğinde 2. obje ona göre takip edebiliyor. Burada bilinmesi gerken
+    şey de asıl olarak takip esnasinda yer çekimi ve kütle değerlerine dikkat edilmelidir.
+
+    Ayarlar;
+    - Connected Body => kısmına takip edilecek objeyi atıyoruz. RigidBodysi olmak zorundadır.
+    - Break Force => bağlantının kopacağı güç arada ki bağın eklemin kopacağı güç anlamına gelir.
+    - Break Torque => Aynı şekilde ona da bir değer verirsek bağlantıyı koparacaktır. Objelerin işi bittiğinde kod kısmından ulaşıp değer verip bağı koparabiliriz.
+    - Enable Collision => çarpışmaları yakalayabilmek için gerekli olan parametre çarpışma etkin olduğunda tetikleme aktif olur. açmak için tik atmak lazım
+    - Enable Preprocessing => çok hızlı hareket etmelerde arkada çalışan optimizasyonu sağlar
+    - Mass Scale => kütle düşük olunca çok daha rahat hareket eder 
+    - Connected Mass Scale => Bağlantının kütle boyutudur. kütle boyutu düştükçe hareketler ağırlaşıyor yavaş hareket ediyor.
+</p>
+<p>
+    Hinge Joint(Component) Kapıların menteşesi için kullanılabilir ve gene objeleri birbirine bağlamak için kullanılabilir. Menteşe olayı vardır kapılarda vs genelde kullanılır.
+
+    Ayarlar;
+    - 
+</p>
