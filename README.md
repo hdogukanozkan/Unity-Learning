@@ -940,6 +940,26 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 <p>
     Hinge Joint(Component) Kapıların menteşesi için kullanılabilir ve gene objeleri birbirine bağlamak için kullanılabilir. Menteşe olayı vardır kapılarda vs genelde kullanılır.
 
-    Ayarlar;
-    - 
+    NOT : DUVARI rigidBody => Constraints kısmından ayarlarını kitliyoruz kıpırdamasın diye x y z full freezeliyoruz.
+
+    Ayarlar;  
+    - Connected Body => buraya kapıya duvarı bağlayacağız yani duvarı buraya yükleyecez rigidbody sini
+    - Edit Angular Limits => Edit kısmından menteşenin yönünü görüyoruz.
+    - Anchor => Menteşenin eksenini gösteriyoruz ayarlıyoruz. 
+    - Axis => ise bize menteşenin yönünü verir ayarlamamızı sağlar.
+    - Motor => burada objenin sürekli dönmesini sağlıyoruz. Döner kapı vs yapılabilir.
+    - Motor - Target Velocity => nesnenin konuma hareket edeceği gücü istiyor. 250 
+    - Motor - Force => Güç  50 gibi değerler verilebilir.
+    Spring : Kapının yaylanma Sistemi
+    - Spring => Nesnenin hareket etmek için ileri sürdüğü kuvvet örnk = 10  değer yükseldikçe kapı zorlanacak açılmayacak falan
+    - Spring - Damper => Kapının uyguladığı fiziksel güç
+    - Target Position => Varsayılan derece kapının derecesini belirler hep o açıda sabit kalır biraz aralık bırakmak için kullanabiliriz 20 derece gibi.
+    Limits : Kapının ne kadar açılacağını ne kadar kapanacağını karar veren bölüm.
+    Min =>  genelde 0
+    Max => En fazla 10 dediğimizde 10 dereceden ileriye gitmez. En fazla 10 derece açılır.
+    Bounciness => sekme 1 dediğimizde ufak bir sekme hareketi yapar yumuşatır hareketi.
+    Bounce Min Velocity => sekme hızı 0.5 deriz kuvvetin gelişine göre minimum değer veririz.
+    Contact Distance => Mesafe iletişimi temas halinde yani herhangi bir titreşim olmasını önlemek 
+    
+
 </p>
