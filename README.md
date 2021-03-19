@@ -923,6 +923,8 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 
 ### 3D | JOİNTLER 1
 
+##### Fixed Joint
+
 <p>
     Fixed Joint(component) kullanıyoruz burada karşımıza 2 şey çıkıyor temel olarak 1.si bağlanacak objeyi seçiyoruz 2.si tam olarak bilemediğim connected articulation body.
     1. de bir obje seçiyoruz ve bu obje ile aralarından bir bağ oluşuyor bu bağ sayesinde 1. obje hareket ettiğinde 2. obje ona göre takip edebiliyor. Burada bilinmesi gerken
@@ -937,6 +939,9 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     - Mass Scale => kütle düşük olunca çok daha rahat hareket eder 
     - Connected Mass Scale => Bağlantının kütle boyutudur. kütle boyutu düştükçe hareketler ağırlaşıyor yavaş hareket ediyor.
 </p>
+
+##### Hinge Joint
+
 <p>
     Hinge Joint(Component) Kapıların menteşesi için kullanılabilir ve gene objeleri birbirine bağlamak için kullanılabilir. Menteşe olayı vardır kapılarda vs genelde kullanılır.
 
