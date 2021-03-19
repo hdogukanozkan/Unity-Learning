@@ -944,11 +944,10 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 
 <p>
     Hinge Joint(Component) Kapıların menteşesi için kullanılabilir ve gene objeleri birbirine bağlamak için kullanılabilir. Menteşe olayı vardır kapılarda vs genelde kullanılır.
-</p>
-<p>
+    
+
     NOT : DUVARI rigidBody => Constraints kısmından ayarlarını kitliyoruz kıpırdamasın diye x y z full freezeliyoruz.
-</p>
-<p>
+
     Ayarlar;  
     - Connected Body => buraya kapıya duvarı bağlayacağız yani duvarı buraya yükleyecez rigidbody sini
     - Edit Angular Limits => Edit kısmından menteşenin yönünü görüyoruz.
@@ -966,7 +965,8 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     Max => En fazla 10 dediğimizde 10 dereceden ileriye gitmez. En fazla 10 derece açılır.
     Bounciness => sekme 1 dediğimizde ufak bir sekme hareketi yapar yumuşatır hareketi.
     Bounce Min Velocity => sekme hızı 0.5 deriz kuvvetin gelişine göre minimum değer veririz.
-    Contact Distance => Mesafe iletişimi temas halinde yani herhangi bir titreşim olmasını önlemek   
+    Contact Distance => Mesafe iletişimi temas halinde yani herhangi bir titreşim olmasını önlemek 
+    
 </p>
 
 #### 
