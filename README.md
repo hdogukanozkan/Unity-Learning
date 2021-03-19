@@ -951,7 +951,7 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     Ayarlar;  
     - Connected Body => buraya kapıya duvarı bağlayacağız yani duvarı buraya yükleyecez rigidbody sini
     - Edit Angular Limits => Edit kısmından menteşenin yönünü görüyoruz.
-    - Anchor => Menteşenin eksenini gösteriyoruz ayarlıyoruz. 
+    - Anchor => Menteşenin veya eklemin eksenini gösteriyoruz ayarlıyoruz. 
     - Axis => ise bize menteşenin yönünü verir ayarlamamızı sağlar.
     - Motor => burada objenin sürekli dönmesini sağlıyoruz. Döner kapı vs yapılabilir.
     - Motor - Target Velocity => nesnenin konuma hareket edeceği gücü istiyor. 250 
@@ -969,8 +969,28 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     
 </p>
 
-#### 
+#### Spring Joint
 
 <p>
-    
+    Objeler arası yaylanma yapacağımız joint.
+
+    Anachor => Eklemin yerini ayarlıyoruz
+    Spring => yayın hızlı hareket etmesini sağlar.
+    Damper => O yayın genişliği diye biliriz büyürse yay daha yavaş hareket eder.
+    Min Distance => minimum mesafe 
+    Max Distance => maximum mesafe 
+    Eğer burada değer verilmezse min max tutarsızlık olur sonsuz bir yaylanma oluşabilir.
+
 </p>
+
+#### Constant force 
+<p>
+    Roket atmak için hareket ettirmek için kullanılabilir.
+    Bir yöne açıya sürekli güç uygulayarak hareket etmesini sağlar.
+
+    Force => Bir yöne doğru eksene doğru hareket sağlar. Düz hareket etmesini veya düz açıya göre güç uygular.
+    Relative Force => Objenin kendi eksinine doğru hareket sağlar
+    Torque => Objenin kendi etrafından dönmesini sağlar.
+    Relative Torque => Objenin kendi eksenini esas alarak kendi etrafından dönmesini saplar. Obje kendi etrafında döner.
+</p>
+
