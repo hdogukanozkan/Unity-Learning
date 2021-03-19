@@ -923,7 +923,7 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 
 ### 3D | JOİNTLER 1
 
-##### Fixed Joint
+#### Fixed Joint
 
 <p>
     Fixed Joint(component) kullanıyoruz burada karşımıza 2 şey çıkıyor temel olarak 1.si bağlanacak objeyi seçiyoruz 2.si tam olarak bilemediğim connected articulation body.
@@ -940,12 +940,12 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     - Connected Mass Scale => Bağlantının kütle boyutudur. kütle boyutu düştükçe hareketler ağırlaşıyor yavaş hareket ediyor.
 </p>
 
-##### Hinge Joint
+#### Hinge Joint
 
 <p>
     Hinge Joint(Component) Kapıların menteşesi için kullanılabilir ve gene objeleri birbirine bağlamak için kullanılabilir. Menteşe olayı vardır kapılarda vs genelde kullanılır.
 
-    NOT : DUVARI rigidBody => Constraints kısmından ayarlarını kitliyoruz kıpırdamasın diye x y z full freezeliyoruz.
+    NOT  DUVARI rigidBody => Constraints kısmından ayarlarını kitliyoruz kıpırdamasın diye x y z full freezeliyoruz.
 
     Ayarlar;  
     - Connected Body => buraya kapıya duvarı bağlayacağız yani duvarı buraya yükleyecez rigidbody sini
@@ -966,4 +966,10 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     Bounce Min Velocity => sekme hızı 0.5 deriz kuvvetin gelişine göre minimum değer veririz.
     Contact Distance => Mesafe iletişimi temas halinde yani herhangi bir titreşim olmasını önlemek 
     
+</p>
+
+#### 
+
+<p>
+
 </p>
