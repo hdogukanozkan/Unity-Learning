@@ -994,3 +994,14 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     Relative Torque => Objenin kendi eksenini esas alarak kendi etrafından dönmesini saplar. Obje kendi etrafında döner.
 </p>
 
+### UNİTY GRAFİK | IŞIKLAR | KAMERA | METERİAL | TEXTURE | VS.
+
+<p>
+    MESHES : Ana grafik ilkelerindendir.Bir nesnenin şeklini tanımlarlar.İskelet
+
+    Materials : Objenin ,Renk tonları ve daha fazlasını ekleyerek yüzeyin nasıl oluşturulması gerektiğini tanımlar.Çeşitli türleri vardır. İskeletin üstünü kaplayan boyalar
+
+    Shaders : Gölgelendiricilerdir,Objelerin rengini ayarlamak matematiksel işlemler yaparak gölgeyi hesaplar. Gölgeleri ayarlar.
+
+    Textures : Dokulardır, bir objenin kıyafeti diyebiliriz. Objenin kaplanacak yüzeyini belirlemek için kullanılır. Gölgelendiricler hesaplama yapmak için dokuları kullanabilir.Dokular ahşap masa veya metal masa nın dokusu kıyafeti yani 
+</p>
