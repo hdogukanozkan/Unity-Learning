@@ -240,7 +240,7 @@ foreach(var item in cokluobje)
 ```
 ###  GameObject ve gameObject farkı
 
-<p> GameObject ve gameObject farklıdır. küçük ile başlayan içinde bulunduğumuz scriptin objesi anlamına gelir.
+<p> GameObject ve gameObject farklıdır. küçük ile başlayan içinde bulunduğumuz scriptin objesi anlamına gelir.</p>
 
 ```C#
 
@@ -326,7 +326,7 @@ Destroy(GetComponent<CapsuleCollider>());
 ### Transform translate ayarları
 
 transform işlemleri  için script dosyası oluşturuyoruz.
-
+<br><br>
 transform adresleri position , rotation ve scale değerlerini alabilmek öğrenmek için ;
 
 ```C#
@@ -366,7 +366,9 @@ pozisyon2 = new Vector3(1f, 2f, 1f);
 ```
 <p>
 Quaternion : Objelerin arasında ki mesafeyi ölçüyoruz bilmek önemli.
+<br><br>
 Transform değerlerini değiştirmek için de ;
+<br><br>
 Time.deltaTime: Saniyede işlem yapmak için daha yavaşlatır veya daha hızlanıdırır objeyi kilometre hesabı gibi araçlarda.
 </p>
 
@@ -814,7 +816,9 @@ public class pasabahce : MonoBehaviour
 
 <p>
     Box collider , Capsule collider , Sphere collider  Collider bizim görmemiş olduğumuz çevresinde çizgi. 
+    <br><br>
     Her objenin kendine özgü collideri olmak zorunda.
+    <br><br>
     Terrain kısmı haritamızdır bütün dağlar ağaçlar vs.
     
 </p>
@@ -822,9 +826,13 @@ public class pasabahce : MonoBehaviour
     Wheel Collider araba oyunu için teker yapımına yarayan kullanılan colliderdir. Süspansiyon gibi ince detay teker ayarları yapılır.
 <p>
     Character Controller - Karakter kontroller  hazır basit karakterin ön ayarları için kullanılır 
+    <br><br>
     1-Slope Limit yokuş yukarı çıkılabilecek açı derecesi
+    <br><br>
     2-Step offset basamak 
+    <br><br>
     3-skin width ince detay karakterin sıkışması falan sanırım
+    <br><br>
     4-min move distance ise titreşimi en aza indiren yerdir
 </p>
 
@@ -927,16 +935,24 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 
 <p>
     Fixed Joint(component) kullanıyoruz burada karşımıza 2 şey çıkıyor temel olarak 1.si bağlanacak objeyi seçiyoruz 2.si tam olarak bilemediğim connected articulation body.
+    <br><br>
     1. de bir obje seçiyoruz ve bu obje ile aralarından bir bağ oluşuyor bu bağ sayesinde 1. obje hareket ettiğinde 2. obje ona göre takip edebiliyor. Burada bilinmesi gerken
     şey de asıl olarak takip esnasinda yer çekimi ve kütle değerlerine dikkat edilmelidir.
-
+    <br><br>    
     Ayarlar;
+    <br><br>
     - Connected Body => kısmına takip edilecek objeyi atıyoruz. RigidBodysi olmak zorundadır.
+    <br><br>
     - Break Force => bağlantının kopacağı güç arada ki bağın eklemin kopacağı güç anlamına gelir.
+    <br><br>
     - Break Torque => Aynı şekilde ona da bir değer verirsek bağlantıyı koparacaktır. Objelerin işi bittiğinde kod kısmından ulaşıp değer verip bağı koparabiliriz.
+    <br><br>
     - Enable Collision => çarpışmaları yakalayabilmek için gerekli olan parametre çarpışma etkin olduğunda tetikleme aktif olur. açmak için tik atmak lazım
+    <br><br>
     - Enable Preprocessing => çok hızlı hareket etmelerde arkada çalışan optimizasyonu sağlar
+    <br><br>
     - Mass Scale => kütle düşük olunca çok daha rahat hareket eder 
+    <br><br>
     - Connected Mass Scale => Bağlantının kütle boyutudur. kütle boyutu düştükçe hareketler ağırlaşıyor yavaş hareket ediyor.
 </p>
 
@@ -944,26 +960,41 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 
 <p>
     Hinge Joint(Component) Kapıların menteşesi için kullanılabilir ve gene objeleri birbirine bağlamak için kullanılabilir. Menteşe olayı vardır kapılarda vs genelde kullanılır.
-    
-
+    <br><br>
     NOT : DUVARI rigidBody => Constraints kısmından ayarlarını kitliyoruz kıpırdamasın diye x y z full freezeliyoruz.
-
+    <br><br>
     Ayarlar;  
+    <br><br>
     - Connected Body => buraya kapıya duvarı bağlayacağız yani duvarı buraya yükleyecez rigidbody sini
+    <br><br>
     - Edit Angular Limits => Edit kısmından menteşenin yönünü görüyoruz.
+    <br><br>
     - Anchor => Menteşenin veya eklemin eksenini gösteriyoruz ayarlıyoruz. 
+    <br><br>
     - Axis => ise bize menteşenin yönünü verir ayarlamamızı sağlar.
+    <br><br>
     - Motor => burada objenin sürekli dönmesini sağlıyoruz. Döner kapı vs yapılabilir.
+    <br><br>
     - Motor - Target Velocity => nesnenin konuma hareket edeceği gücü istiyor. 250 
+    <br><br>
     - Motor - Force => Güç  50 gibi değerler verilebilir.
+    <br><br>
     Spring : Kapının yaylanma Sistemi
+    <br><br>
     - Spring => Nesnenin hareket etmek için ileri sürdüğü kuvvet örnk = 10  değer yükseldikçe kapı zorlanacak açılmayacak falan
+    <br><br>
     - Spring - Damper => Kapının uyguladığı fiziksel güç
+    <br><br>
     - Target Position => Varsayılan derece kapının derecesini belirler hep o açıda sabit kalır biraz aralık bırakmak için kullanabiliriz 20 derece gibi.
+    <br><br>
     Limits : Kapının ne kadar açılacağını ne kadar kapanacağını karar veren bölüm.
+    <br><br>
     Min =>  genelde 0
+    <br><br>
     Max => En fazla 10 dediğimizde 10 dereceden ileriye gitmez. En fazla 10 derece açılır.
+    <br><br>
     Bounciness => sekme 1 dediğimizde ufak bir sekme hareketi yapar yumuşatır hareketi.
+    <br><br>
     Bounce Min Velocity => sekme hızı 0.5 deriz kuvvetin gelişine göre minimum değer veririz.
     Contact Distance => Mesafe iletişimi temas halinde yani herhangi bir titreşim olmasını önlemek 
     
@@ -973,11 +1004,15 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 
 <p>
     Objeler arası yaylanma yapacağımız joint.
-
+    <br><br>
     Anachor => Eklemin yerini ayarlıyoruz
+    <br><br>
     Spring => yayın hızlı hareket etmesini sağlar.
+    <br><br>
     Damper => O yayın genişliği diye biliriz büyürse yay daha yavaş hareket eder.
+    <br><br>
     Min Distance => minimum mesafe 
+    <br><br>
     Max Distance => maximum mesafe 
     Eğer burada değer verilmezse min max tutarsızlık olur sonsuz bir yaylanma oluşabilir.
 
@@ -987,10 +1022,13 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 <p>
     Roket atmak için hareket ettirmek için kullanılabilir.
     Bir yöne açıya sürekli güç uygulayarak hareket etmesini sağlar.
-
+<br><br>
     Force => Bir yöne doğru eksene doğru hareket sağlar. Düz hareket etmesini veya düz açıya göre güç uygular.
+    <br><br>
     Relative Force => Objenin kendi eksinine doğru hareket sağlar
+    <br><br>
     Torque => Objenin kendi etrafından dönmesini sağlar.
+    <br><br>
     Relative Torque => Objenin kendi eksenini esas alarak kendi etrafından dönmesini saplar. Obje kendi etrafında döner.
 </p>
 
