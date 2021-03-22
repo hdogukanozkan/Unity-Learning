@@ -998,10 +998,10 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 
 <p>
     MESHES : Ana grafik ilkelerindendir.Bir nesnenin şeklini tanımlarlar.İskelet
-<br>
+<br><br>
     Materials : Objenin ,Renk tonları ve daha fazlasını ekleyerek yüzeyin nasıl oluşturulması gerektiğini tanımlar.Çeşitli türleri vardır. İskeletin üstünü kaplayan boyalar
-<br>
+<br><br>
     Shaders : Gölgelendiricilerdir,Objelerin rengini ayarlamak matematiksel işlemler yaparak gölgeyi hesaplar. Gölgeleri ayarlar.
-<br>
+<br><br>
     Textures : Dokulardır, bir objenin kıyafeti diyebiliriz. Objenin kaplanacak yüzeyini belirlemek için kullanılır. Gölgelendiricler hesaplama yapmak için dokuları kullanabilir.Dokular ahşap masa veya metal masa nın dokusu kıyafeti yani 
 </p>
