@@ -1049,5 +1049,4 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     <br>
     textures.com dokuların bulunduğu çok büyük sitelerden biri
     <br>
-    
 </p>
