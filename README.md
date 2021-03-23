@@ -1036,7 +1036,7 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 
 <p>
     MESHES : Ana grafik ilkelerindendir.Bir nesnenin şeklini tanımlarlar.İskelet
-<br><br>
+    <br><br>
     Materials : Objenin ,Renk tonları ve daha fazlasını ekleyerek yüzeyin nasıl oluşturulması gerektiğini tanımlar.Çeşitli türleri vardır. İskeletin üstünü kaplayan boyalar.
     <br>
     Shader : Gölgelendiricidir
