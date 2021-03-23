@@ -964,37 +964,37 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     NOT : DUVARI rigidBody => Constraints kısmından ayarlarını kitliyoruz kıpırdamasın diye x y z full freezeliyoruz.
     <br><br>
     Ayarlar;  
-    <br><br>
+    <br>
     - Connected Body => buraya kapıya duvarı bağlayacağız yani duvarı buraya yükleyecez rigidbody sini
-    <br><br>
+    <br>
     - Edit Angular Limits => Edit kısmından menteşenin yönünü görüyoruz.
-    <br><br>
+    <br>
     - Anchor => Menteşenin veya eklemin eksenini gösteriyoruz ayarlıyoruz. 
-    <br><br>
+    <br>
     - Axis => ise bize menteşenin yönünü verir ayarlamamızı sağlar.
-    <br><br>
+    <br>
     - Motor => burada objenin sürekli dönmesini sağlıyoruz. Döner kapı vs yapılabilir.
-    <br><br>
+    <br>
     - Motor - Target Velocity => nesnenin konuma hareket edeceği gücü istiyor. 250 
-    <br><br>
+    <br>
     - Motor - Force => Güç  50 gibi değerler verilebilir.
-    <br><br>
+    <br>
     Spring : Kapının yaylanma Sistemi
-    <br><br>
+    <br>
     - Spring => Nesnenin hareket etmek için ileri sürdüğü kuvvet örnk = 10  değer yükseldikçe kapı zorlanacak açılmayacak falan
-    <br><br>
+    <br>
     - Spring - Damper => Kapının uyguladığı fiziksel güç
-    <br><br>
+    <br>
     - Target Position => Varsayılan derece kapının derecesini belirler hep o açıda sabit kalır biraz aralık bırakmak için kullanabiliriz 20 derece gibi.
-    <br><br>
+    <br>
     Limits : Kapının ne kadar açılacağını ne kadar kapanacağını karar veren bölüm.
-    <br><br>
+    <br>
     Min =>  genelde 0
-    <br><br>
+    <br>
     Max => En fazla 10 dediğimizde 10 dereceden ileriye gitmez. En fazla 10 derece açılır.
-    <br><br>
+    <br>
     Bounciness => sekme 1 dediğimizde ufak bir sekme hareketi yapar yumuşatır hareketi.
-    <br><br>
+    <br>
     Bounce Min Velocity => sekme hızı 0.5 deriz kuvvetin gelişine göre minimum değer veririz.
     Contact Distance => Mesafe iletişimi temas halinde yani herhangi bir titreşim olmasını önlemek 
     
@@ -1004,15 +1004,15 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 
 <p>
     Objeler arası yaylanma yapacağımız joint.
-    <br><br>
+    <br>
     Anachor => Eklemin yerini ayarlıyoruz
-    <br><br>
+    <br>
     Spring => yayın hızlı hareket etmesini sağlar.
-    <br><br>
+    <br>
     Damper => O yayın genişliği diye biliriz büyürse yay daha yavaş hareket eder.
-    <br><br>
+    <br>
     Min Distance => minimum mesafe 
-    <br><br>
+    <br>
     Max Distance => maximum mesafe 
     Eğer burada değer verilmezse min max tutarsızlık olur sonsuz bir yaylanma oluşabilir.
 
@@ -1022,13 +1022,13 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 <p>
     Roket atmak için hareket ettirmek için kullanılabilir.
     Bir yöne açıya sürekli güç uygulayarak hareket etmesini sağlar.
-<br><br>
+    <br>
     Force => Bir yöne doğru eksene doğru hareket sağlar. Düz hareket etmesini veya düz açıya göre güç uygular.
-    <br><br>
+    <br>
     Relative Force => Objenin kendi eksinine doğru hareket sağlar
-    <br><br>
+    <br>
     Torque => Objenin kendi etrafından dönmesini sağlar.
-    <br><br>
+    <br>
     Relative Torque => Objenin kendi eksenini esas alarak kendi etrafından dönmesini saplar. Obje kendi etrafında döner.
 </p>
 
@@ -1044,7 +1044,7 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     Albedo : Renk seçimi
     <br><br>
     Shaders : Gölgelendiricilerdir,Objelerin rengini ayarlamak matematiksel işlemler yaparak gölgeyi hesaplar. Gölgeleri ayarlar.
-<br><br>
+    <br><br>
     Textures : Dokulardır, bir objenin kıyafeti diyebiliriz. Objenin kaplanacak yüzeyini belirlemek için kullanılır. Gölgelendiricler hesaplama yapmak için dokuları kullanabilir.Dokular ahşap masa veya metal masa nın dokusu kıyafeti yani 
     <br>
     textures.com dokuların bulunduğu çok büyük sitelerden biri
