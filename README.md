@@ -1042,7 +1042,6 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     Shader : Gölgelendiricidir
     <br>
     Albedo : Renk seçimi
-    
     <br><br>
     Shaders : Gölgelendiricilerdir,Objelerin rengini ayarlamak matematiksel işlemler yaparak gölgeyi hesaplar. Gölgeleri ayarlar.
 <br><br>
