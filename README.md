@@ -1223,3 +1223,14 @@ Birden fazla kamera oluşturuyoruz ve bunları bir boş gameobjenin scripti ile 
 
 ```
 
+# Occlusion Culling | Frustum Culling Sistemi
+
+Occlusion Culling ;
+---
+Bu culling objelerin arkasında kalan görünmeyen objelerin ekran kartına gitmesi engeller ve performans arttırımı sağlar. Camera objesinin içinde bulunur.
+<br>
+Objeler eğer saklayabilirse arkasında obje tutabilirse statik yerine => Occluder static duvarlar örnek olabilir.
+<br>
+Eğer obje saklanıyorsa gizleniyorsa => Occludee Static Masa sandalye duvar arkasında kalan şeyler örnek olabilir.
+<br>
+Obje hem saklanabilir hemde saklanabilen objeler içinde 2 si de verilecektir. Örneğin masanın altında kitaplar da saklanabilir gibi.
