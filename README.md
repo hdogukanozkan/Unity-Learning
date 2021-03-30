@@ -929,9 +929,10 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
 
 ```
 
-### 3D | JOİNTLER 1
+# 3D | JOİNTLER 1
 
-#### Fixed Joint
+Fixed Joint
+---
 
 <p>
     Fixed Joint(component) kullanıyoruz burada karşımıza 2 şey çıkıyor temel olarak 1.si bağlanacak objeyi seçiyoruz 2.si tam olarak bilemediğim connected articulation body.
@@ -1032,7 +1033,7 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     Relative Torque => Objenin kendi eksenini esas alarak kendi etrafından dönmesini saplar. Obje kendi etrafında döner.
 </p>
 
-### UNİTY GRAFİK | IŞIKLAR | KAMERA | METERİAL | TEXTURE | VS.
+# UNİTY GRAFİK | IŞIKLAR | KAMERA | METERİAL | TEXTURE | VS.
 
 <p>
     MESHES : Ana grafik ilkelerindendir.Bir nesnenin şeklini tanımlarlar.İskelet
