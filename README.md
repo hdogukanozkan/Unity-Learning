@@ -135,20 +135,25 @@ Namespace okulun adi.>class sınıfın adları.>fonksiyon da öğrenci adları.
 - Miras alma olayı :Başka dosyadı classın içinde ki methodları kullanmak için kullanılan yöntemdir. monobehaviour yazan kısma diğer dosyanın class adı yazılır.
 <p>classAdi degisken = new classAdi(); tanımlaması yapılmalıdır. ve diger class'in methodunu kullanabilmek için degisken.methodAdi(); kullanılır.</p>
 
-### Temel Fonksiyonlar
+# Temel Fonksiyonlar | Start | Update | Using ...
 
-#### Start Fonksiyonları
+Start Fonksiyonları
+---
+
 - Awake():İlk çalışan fonksiyon
 - OnEnable():İkinci çalışan fonksiyondur.Obje Aktif ise çalışacak fonksiyondur.1 KERE
 - Start():üçüncü çalışan fonksiyondur sırayla çalışırlar ve start fonksiyonları birer kere çalışmaktadır.
 
-#### Güncelleme Fonksiyonları   (sürekli çalışırlar durmaksızın)
+Güncelleme Fonksiyonları   (sürekli çalışırlar durmaksızın)
+---
+
 - FixedUpdate(): Update fonksiyonundan daha çok çalışır daha hızlı çalışır hız olarak 0.2 salisede tekrar çalışır update ise 1 saniye.
 - Update(): Sürekli çalışan fonksiyondur.Sürekli çalışması sistemleri çok yorar dikkatli kullanılması gerekmektedir.
 - LateUpdate(): Lateupdate ise bütün update bütün fonksiyonlar çalıştıktan sonra en son çalışır. Bütün fonksiyonların bitmesini bekler.
 - OnDisable():Obje pasif ise çalışacak fonksiyondur.1 KERE
 
-### Using ve Namespace 
+Using ve Namespace 
+---
 
 - Namespace nedir? : Class ve methodların çakışmasını önlemek için kullanılır. Verimliliği çok yüksektir. Gruplama için kullanılır. Kod çakışmaları önlenir  gruplama ile önceden hazırlanan kodlar daha rahat çekilir ve kolaylık sağlanır. Namespace ile class havuzu oluşturabiliriz. Sınırsız işlem yapılabilir.
 - Namespace kullanmak için usinge eklenmesi gerekir.  Using NamespaceAdı diye eklenir. Sınıf tanımlamak için de ClassAdi degisken = new ClassAdi();
@@ -158,7 +163,8 @@ Namespace okulun adi.>class sınıfın adları.>fonksiyon da öğrenci adları.
 
 
 
-### MonoBehaviour > Invoke Method !
+MonoBehaviour > Invoke Method !
+---
 
 - Invoke: bir defa kullanım için. zamanlayıcı ayarlanır.
 - InvokeRepating : Sürekli çalışması gereken metotu belirli sürelerle çalıştırmak için kullanılır ve durdurmak için kullanılır.
@@ -177,7 +183,8 @@ public void oc()
 ```
 
 
-### GETCOMPONENT  VE GETCOMPONENTS 
+# GETCOMPONENT  VE GETCOMPONENTS 
+
 <p>Objelerin componentlerinde script kodları ile değişiklik yapmak için kullanılanGetCompoenet komutunu gördük.</p>
 <p>GetComponents ise 1 den fazla component ayar için kullanılır. Aynı componentlerin değişiklikleri için kullanılır 2 adet Capsül Colider varsa veya 2 adet ses varsa bunların ayarlarını aynı yapabiliriz. </p>
 
@@ -186,7 +193,9 @@ public void oc()
 - GetComponent<CapsuleCollider>().enabled = false; //pasif hale gelir veya triggerini aç kapa yapabiliriz
 ```
 
-#### örnek kullanım için:
+örnek kullanım için:
+---
+
 ```C#
 CapsuleCollider Capsulum;
 Capsulum =GetComponent<CapsuleCollider>();
@@ -209,7 +218,7 @@ GetComponentInParent<AudioSource>().mute=true;  // GetComponentsInParent<>
 GetComponentInChildren<CapsuleCollider>().trigger=true;  // GetComponentsInChildren<> 
 ``` 
 
-### Obje Yakalama Değişiklik yapma.
+# Obje Yakalama Değişiklik yapma.
 
 <p> Oyunlarda değişiklik yapmamız GetComponent ' te olduğu gibi bazı component değerlerini açıp kapamamız gerekir örneğin silahtan çıkan mermi adama deydiğinde yok olması tepki vermesi. Topun kaleye girdiğinde kaledeki filelerin tepki vermesi gibi gibi objeler arası etkileşim olması gerekir bazı componentlerin açılıp kapanması gerekir ve çok önemlidir! </p>
 
@@ -238,7 +247,7 @@ foreach(var item in cokluobje)
 }
 
 ```
-###  GameObject ve gameObject farkı
+#  GameObject ve gameObject farkı
 
 <p> GameObject ve gameObject farklıdır. küçük ile başlayan içinde bulunduğumuz scriptin objesi anlamına gelir.</p>
 
@@ -265,20 +274,8 @@ if(Light) //değer true ile kıyaslar true ise
 
 ```
 
-### OBJELERİ AKTİF PASİF YAPMA
+# Message BroadCast - Send Message
 
-```C#
-
-gameObject.SetActive(false); // pasif yapar
-gameObject.SetActive(true); // aktif yapar
-if(gameObject.activeSelf) // objenin durumunu öğrenmek için kullanılır aktif mi pasif mi 
-if ( gameObject.CompareTag("dusman")) // tagı düşman ise şunları şunları yap diye biliyoruz burada
-Rigidbody rigidekle= gameObject.AddComponent<Rigidbody>() as Rigidbody; // objeye component eklemek için kullanılabilir.
-rigidekle.isKinematic=true; // ve componentin ayarlarını yapabiliyoruz.
-
-```
-
-### Message BroadCast - Send Message
 
 ```C# 
 
@@ -298,8 +295,23 @@ void ekranabas2()
 }
 
 ```
-### Obje yok etme silme 
 
+# OBJELERİ AKTİF PASİF YAPMA
+
+```C#
+
+gameObject.SetActive(false); // pasif yapar
+gameObject.SetActive(true); // aktif yapar
+if(gameObject.activeSelf) // objenin durumunu öğrenmek için kullanılır aktif mi pasif mi 
+if ( gameObject.CompareTag("dusman")) // tagı düşman ise şunları şunları yap diye biliyoruz burada
+Rigidbody rigidekle= gameObject.AddComponent<Rigidbody>() as Rigidbody; // objeye component eklemek için kullanılabilir.
+rigidekle.isKinematic=true; // ve componentin ayarlarını yapabiliyoruz.
+
+```
+
+
+Obje yok etme silme 
+---
 <p> objeleri yok etmek silmek için kullanılan script kodunu göreceğiz destroy komutunu kullanırız.Süreli destroy içinde kullanılır.</p>
 
 ```C#
@@ -310,7 +322,8 @@ Destroy(this); // this bu demek yani bu komut script dosyasını silmek için ku
 
 ```
 
-#### Component silmek script dosyası ile
+Component silmek script dosyası ile
+---
 
 ```C# 
 
@@ -318,12 +331,13 @@ Destroy(GetComponent<CapsuleCollider>());
 
 ```
 
-### Prefab Oluşturma
+# Prefab Oluşturma
 
 <p> Yeni sahne oluşturmak için File kısmından new Scane oluşturuyoruz ctrl s ile kaydediyoruz isim veriyoruz. Sahneler arası obje vs script dosyası taşıma işlemini prefab deniyor.  Objeyi örneklendirmek(prefab yapmak) için  objeyi tutup aşşağıda proje kısmında dosyalar kısmına bırakıyoruz ve artık prefab oldu. Artık çağırılabilir kalıp haline geldi Sahneler arası kullanabilir Ve bütün özellikleri geldi .</p>
 <p> Prefab güncellemek için tüm sahnelerde open prefab yazısına tıklayıp değiştirebiliriz veya objeler kısmında küçük ok tuşuna basabiliriz. </p>
 
-### Transform translate ayarları
+Transform translate ayarları
+---
 
 transform işlemleri  için script dosyası oluşturuyoruz.
 <br><br>
@@ -339,11 +353,12 @@ Debug.Log(transform.localScale);
 
 ```
 
-#### Vector nedir ?
+# Vector nedir ?
 
 herhangi bir objenin yönlerini ve pozisyonlarını değiştirmemizi sağlıyor.Float türünde değerler alırlar.
 
-#### Vector tanımlama
+Vector tanımlama
+---
 
 ```C#
 
@@ -354,7 +369,8 @@ pozisyon2 = new Vector3(1f, 2f, 1f);
 
 ```
 
-#### Vector tanımlama 2
+Vector tanımlama 2
+---
 
 ``` C#
 
@@ -364,6 +380,9 @@ pozisyon2 = new Vector3(1f, 2f, 1f);
    Quaternion d; //  objeler arası mesafe için
 
 ```
+Quaternion ,Time.deltaTime
+---
+
 <p>
 Quaternion : Objelerin arasında ki mesafeyi ölçüyoruz bilmek önemli.
 <br><br>
@@ -382,7 +401,8 @@ Time.deltaTime: Saniyede işlem yapmak için daha yavaşlatır veya daha hızlan
          Debug.Log(transform.position.normalized); // büyüklüğü her zaman 1 değerinde döndürür.
 ```
 
-#### Vector konum kontrol
+Vector konum kontrol:
+---
 
 ``` C#
  //1.yöntem
@@ -406,9 +426,10 @@ Time.deltaTime: Saniyede işlem yapmak için daha yavaşlatır veya daha hızlan
         }
 ```
 
-### Static Methodlar - Vector3 
+# Static Methodlar - Vector3 
 
-<p>
+ANGLE , açı ,transform :
+---
 
 ```C#
     public Transform hedef; // dışarıdan alınacak 2 tane transform obje tanımlıyorsunuz
@@ -462,8 +483,10 @@ Time.deltaTime: Saniyede işlem yapmak için daha yavaşlatır veya daha hızlan
         
 ```
 
-### Transform Özellikleri - Methodlar
+# Transform Özellikleri - Methodlar
 
+Transform :
+---
 <p>
     Transform bir objenin sahnede ki konumunu gösteren ve hareket işlemlerini yapmamızı sağlayandır. Transform component ve hiyararşide ki hareketlerini de kontrol edebiliyoruz. Objenin ışınlanması.
 </p>
@@ -514,6 +537,8 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
 
 ```
 
+localPosition , localRotation , localScale :
+---
 
 ```C#
 
@@ -558,7 +583,8 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
 
 
 ```
-
+SetParent:
+---
 <p>Burada objelerin hiyararşi ayarlarını yapmayı alt obje eklemeyi görüyoruz bunun için SetParent kullanarak aile hiyararşi oluşturabiliyoruz.</p>
 
 ```C#
@@ -571,7 +597,8 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
         child.transform.SetParent(parent,false);
 
 ```
-
+Quaternion:
+---
 <p>Quaternion ; Dönüş işlemlerinde kullanılması tavsiye edilen daha stabil bir koddur.Hataları minimuma indirir. </p>
 
 ```C#
@@ -604,7 +631,7 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
 
 ```
 
-### Object İnstantiate - obje oluşturma prefabdaki objeleri çekme, prefab objelerini kod ile çağırma
+# Object İnstantiate - obje oluşturma prefabdaki objeleri çekme, prefab objelerini kod ile çağırma
 
 ```C#
 
@@ -627,7 +654,7 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
 
 ```
 
-### UNİTY MATHF | HİDE FLAGS | ÇEŞİTLİ İPUÇLARI | DEĞİŞKEN METHODLARI 
+# UNİTY MATHF | HİDE FLAGS | ÇEŞİTLİ İPUÇLARI | DEĞİŞKEN METHODLARI 
 
 <p> matematik işlemlerimizi yaparken math sınıfını kullanarak gerçekleştiriyoruz.</p>
 
@@ -675,7 +702,7 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
 
 ```
 
- ### Değişkenler için çeşitli methodlar- Örnek ve kullanımı
+# Değişkenler için çeşitli methodlar- Örnek ve kullanımı
 
 ```C#
 
@@ -745,14 +772,14 @@ Yani olay sadece tanımlama ve çağırma şekliyle alakalı diyebiliriz. İyi d
 ```
 
 
-### Hide Flags Yöntemleri ve Çeşitli İpuçları ! Önemli
+# Hide Flags Yöntemleri ve Çeşitli İpuçları ! Önemli
 
 ```C#
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[AddComponentMenu("Dogukan/kendiscriptdosyam")]  //script dosyasına özel component ve menü oluşturabiliyoruz add component
+[AddComponentMenu("Dogukan/kendiscriptdosyam")]  //script dosyasına özel component ve menü oluşturabiliyoruz add component kısmına eklenir.
 
 //Menüye script dosyası eklediğimizden birden fazla componentti de içinde ekleyebiliriz fizik componenti gibi gibi bir script dosyasıyla birden fazla iş yaptırabiliriz.
 [RequireComponent(typeof(Rigidbody))] //bu script eklendiğinde bu componenti de ekleyeceksin demek (silinmez !) script dosyasını silmeden silinmez
@@ -925,7 +952,7 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
             Debug.Log("Etkileşim bitti");
         }
     }
-    
+
 ```
 
 # 3D | JOİNTLER 1
