@@ -1192,6 +1192,7 @@ Vr projeler için bakış açısı için kullanılıyor.<br>
 Birden fazla kamera oluşturuyoruz ve bunları bir boş gameobjenin scripti ile yönetiyoruz.
 
 ```C#
+
     public Camera Ana_Camera;
     public Camera kure_Camera;
     public Camera kare_Camera;
@@ -1217,8 +1218,8 @@ Birden fazla kamera oluşturuyoruz ve bunları bir boş gameobjenin scripti ile 
             kare_Camera.enabled = true;
             kure_Camera.enabled = false;
         }
-
     }
 
 
 ```
+
