@@ -1187,6 +1187,38 @@ Dinamik çözünürlüğü ayarlıyor. Dinamik olarak kare hızı fps azaldığ�
 Vr projeler için bakış açısı için kullanılıyor.<br>
 <br>
 
-# Birden fazla kamera 
+# Birden fazla kamera | Script Dosyası ile Yönetmek 
 
-Birden fazla kamera oluşturuyoruz.
+Birden fazla kamera oluşturuyoruz ve bunları bir boş gameobjenin scripti ile yönetiyoruz.
+
+```C#
+    public Camera Ana_Camera;
+    public Camera kure_Camera;
+    public Camera kare_Camera;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Ana_Camera.enabled = false;
+            kare_Camera.enabled = false;
+            kure_Camera.enabled = true;
+            kure_Camera.fieldOfView = 10f; //BUNUN Gibi componentte düzenlemeler yapabiliriz.
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Ana_Camera.enabled = true;
+            kare_Camera.enabled = false;
+            kure_Camera.enabled = false;
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            Ana_Camera.enabled = false;
+            kare_Camera.enabled = true;
+            kure_Camera.enabled = false;
+        }
+
+    }
+
+
+```
