@@ -1113,7 +1113,6 @@ Bu ekranın hangi kısımlarını sileceğini söylüyor.<br>
 Solid Color : normal renk verilir<br>
 -->Background :Solid arka plan rengi belirleyebiliriz. Sade düz renk<br>
 Skybox : Gökyüzü verilir<br>
-
 <br>
 
 Culling Mask :
@@ -1124,3 +1123,28 @@ Efektörlerde de vardı. Hangi layerların gösterileceğini seçiyoruz eğer ti
 Physical Camera :
 ---
 
+<br>
+
+Clipping Planes ;
+---
+Kameranın gösterecek olduğu menzil kırpma işlemide yapılıyor. <br>
+--> Near : yakında ki kesilecek kısım<br>
+--> Far : en uzak kesilecek kısım<br>
+<br>
+
+Viewport Rect ;
+---
+Bu kameranın ekran görüntüsünün nereye çekileceğini gösteriyo kameranın genişliğini ve yüksekliğini ayarlıyoruz.<br>
+<br>
+
+Depth ;
+---
+makinenin çizim sırasında ki konumu birden fazla kamera varsa kullanılır.<br>
+<br>
+
+### GRAFİK AYARLARI
+
+Rendering Path ;
+---
+
+<br>
