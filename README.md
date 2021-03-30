@@ -1051,7 +1051,7 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     <br>
 </p>
 
-KAMERA AYARLARI ;
+### KAMERA AYARLARI 
 
 kamerayı sahne ekranında gezerken beğendiğimiz bir açıya getirmek için görüşümüz ile serbesst gezerken ki pozisyona getirmek için CTRL + SHİFT + F
 
