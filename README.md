@@ -1095,11 +1095,12 @@ Constant force
     <br>
 </p>
 
-# KAMERA AYARLARI 
+# KAMERA AYARLARI  Component
 
-kamerayı sahne ekranında gezerken beğendiğimiz bir açıya getirmek için görüşümüz ile serbesst gezerken ki pozisyona getirmek için CTRL + SHİFT + F
+kamerayı sahne ekranında gezerken beğendiğimiz bir açıya getirmek için görüşümüz ile serbesst gezerken ki pozisyona getirmek için GameObject>Align With View(CTRL + SHİFT + F) .
+Oyun içerilerinde birden fazla kamera kullanılır ve geçişler olabilir.
 
-Projection ;
+Projection - Kamera türü ;
 ---
 Perspektif : büyüklü küçüklü olmaları yakınların yakın gözükmesi uzaktakilerin ufak görünmesi gerçekçiliktir.
 Orthographic : sabit hepsinin tek tipte göründüğü kamera açısıdır  uzaktaki de yakında ki de aynı görünür.
@@ -1108,4 +1109,7 @@ Orthographic : sabit hepsinin tek tipte göründüğü kamera açısıdır  uzak
 
 Clear Flags ;
 ---
-Skybox : Gökyüzü
+Bu ekranın hangi kısımlarını sileceğini söylüyor.
+Solid Color : normal renk verilir
+-->Background :Solid arka plan rengi belirleyebiliriz. Sade düz renk
+Skybox : Gökyüzü verilir
