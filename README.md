@@ -1,7 +1,9 @@
 # Unity C# Learning
 ## C# Learning Files
 
-### Değişkenler 
+# Temel C#
+
+## Değişkenler 
 
 ```C#
 int i = 0; //tam sayılar
@@ -10,7 +12,8 @@ float yaş = 20.5f; //virgüllü küsüratlı sayılar
 bool dogrumu = true; //doğru yanlış
 ```
 
-### Döngüler
+## Döngüler
+
 
 ```C#
 
@@ -41,7 +44,12 @@ While(true)
 
 ```
 
-### Diziler
+
+
+## Listeler
+
+Diziler
+---
 
 - int[] sayilar= new int[5]; // 5 adet sayiyi bünyesinde barındıran sayılardır
 
@@ -65,7 +73,8 @@ Debug.Log(arabalar[0][1]);  // audi
 
 ``` 
 
-### Switch Case
+Switch Case
+---
 
 - Çok fazla koşul ve sorgu yönteminde kullanılabilir.
 
@@ -88,9 +97,8 @@ break;
 }
 ```
 
-### Listeler
-
-#### ArrayList ve List vardır.
+ArrayList ve List vardır.
+---
 
 ```C#
 List<int> yaslar = new List<int>(); //yaslar adinda liste oluşturma.
@@ -121,14 +129,19 @@ adlar.Add("ahmet"); // veri ekleme
 adlar.Add("mahmut"); // 2.veri
 ```
 
-### Class ve Fonksiyon(Method)
+# Claslar methodlar ve Erişimler public .Private .Protected
+
+Class ve Fonksiyon(Method)
+---
 Namespace ise sınıfları kapsar.
 Class = sınıfları temsil eder içerisinde method'lar bulunur.
 Fonksiyon = Method'lar dır aynı anlama gelirler.
 Örnek: 
 Namespace okulun adi.>class sınıfın adları.>fonksiyon da öğrenci adları.
 
-### Erişim (Public Private Protected)
+Erişim (Public Private Protected)
+---
+
 - Public(Erişilebilir dışarıdan): örnek unity içerisinden değer vermek için falan kullanılabiliyor.
 - Private(Dışarıdan erişim olamaz):Sadece kod dosyasında kullanılır o sınıf dışında kullanılamaz.
 - Protected : Methoda protected erişimi verirsek. Miras almayı yaptığımızda direk kullanım için sadece methodAdi(); kullanılabilir.
