@@ -1113,3 +1113,7 @@ Bu ekranın hangi kısımlarını sileceğini söylüyor.<br>
 Solid Color : normal renk verilir<br>
 -->Background :Solid arka plan rengi belirleyebiliriz. Sade düz renk<br>
 Skybox : Gökyüzü verilir<br>
+<br>
+Culling Mask : Efektörlerde de vardı. Hangi layerların gösterileceğini seçiyoruz eğer tikleri kaldırırsak o katmana ait objeleri kamera görmez !!! <br>
+<br>
+Physical Camera : 
