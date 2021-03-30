@@ -1143,8 +1143,40 @@ makinenin çizim sırasında ki konumu birden fazla kamera varsa kullanılır.<b
 <br>
 
 ## GRAFİK AYARLARI
+<p>
+project Settings > Graphics <br>
+Platforma özel ayarlay yapabiliriz.Default ayarlar hariç değiştirmeler yapabiliriz. 
+</p>
 
 ### Rendering Path ;
-----
+Kamera tarafından hangi görüntü oluşturma yönteminin seçileceği kısımdır.<br>
+foward: kendi bölgeleri her şey spesifik olacaktır kameranın gördüğü objeler.<br>
+Deferred: 
+Legacy vertex Lit : Gölgeler normal haritalar tamamen kapatılacak gözükmeyecek.<br>
+Legacy Deferred light prepass : Tüm nesneler ışıklandırılarak birlikte oluşturuluyor.<br>
+<br>
 
+### Target Texture ;
+Kameramızın görüntüsünün çıktısını alabileceğimizi sağlar. Render texture da kameranın dokusu gibi düşünebiliriz değişiklik yapılıyor. Render Texture kullanılıyor daha sonra tekrar işleyeceğiz.<br>
+<br>
+
+### Occlusion Culling ; 
+Birşeyin arkasında ki objenin çizilmemesi sağlanıyor sistemi yormuyor <br>
+<br>
+
+### HDR ;
+Görüntülerin daha gerçekçi ve güçlü olmasını sağlıyor. Mobilde çok farkını görmüyoruz.<br>
+Dezavantaj daha yüksek kaynak tüketimi ekran kartını çok daha fazla tüketiyor.<br>
+<br>
+
+### MSAA ;
+Objelerimize çok yaklaştığımız zaman tırtıklar olur.İşte bu tırtıklı halleri ortadan kaldırıyor ve azaltıyor. Kullanılmadığında tırtıklı ve kötü görüntü ortaya çıkar. Aktif olması önemlidir görüntüde Yumuşatma sağlar.<br>
+<br>
+
+### Allow Dynamic Resol ;
+Dinamik çözünürlüğü ayarlıyor. Dinamik olarak kare hızı fps azaldığında bunun yerine tutarlı kare hızını korumak için yavaşça azaltır donmalara engel olur.Fps'in anlık düşüşlerini yumuşatır.<br>
+<br>
+
+### Target Eye ;
+Vr projeler için bakış açısı için kullanılıyor.<br>
 <br>
