@@ -1109,7 +1109,7 @@ Orthographic : sabit hepsinin tek tipte göründüğü kamera açısıdır  uzak
 
 Clear Flags ;
 ---
-Bu ekranın hangi kısımlarını sileceğini söylüyor.
-Solid Color : normal renk verilir
--->Background :Solid arka plan rengi belirleyebiliriz. Sade düz renk
-Skybox : Gökyüzü verilir
+Bu ekranın hangi kısımlarını sileceğini söylüyor.<br>
+Solid Color : normal renk verilir<br>
+-->Background :Solid arka plan rengi belirleyebiliriz. Sade düz renk<br>
+Skybox : Gökyüzü verilir<br>
