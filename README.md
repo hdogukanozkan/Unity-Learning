@@ -1050,3 +1050,12 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     textures.com dokuların bulunduğu çok büyük sitelerden biri
     <br>
 </p>
+
+KAMERA AYARLARI
+
+Projection ;
+---
+Perspektif : büyüklü küçüklü olmaları yakınların yakın gözükmesi uzaktakilerin ufak görünmesi gerçekçiliktir.
+Orthographic : sabit hepsinin tek tipte göründüğü kamera açısıdır  uzaktaki de yakında ki de aynı görünür.
+
+![Perstective ve Orthographic](https://docs.unity3d.com/uploads/Main/CameraPerspectiveAndOrtho.jpg)
