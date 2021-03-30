@@ -1051,7 +1051,9 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
     <br>
 </p>
 
-KAMERA AYARLARI
+KAMERA AYARLARI ;
+
+kamerayı sahne ekranında gezerken beğendiğimiz bir açıya getirmek için görüşümüz ile serbesst gezerken ki pozisyona getirmek için CTRL + SHİFT + F
 
 Projection ;
 ---
@@ -1059,3 +1061,7 @@ Perspektif : büyüklü küçüklü olmaları yakınların yakın gözükmesi uz
 Orthographic : sabit hepsinin tek tipte göründüğü kamera açısıdır  uzaktaki de yakında ki de aynı görünür.
 
 ![Perstective ve Orthographic](https://docs.unity3d.com/uploads/Main/CameraPerspectiveAndOrtho.jpg)
+
+Clear Flags ;
+---
+Skybox : Gökyüzü
