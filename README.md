@@ -1122,6 +1122,12 @@ Efektörlerde de vardı. Hangi layerların gösterileceğini seçiyoruz eğer ti
 
 Physical Camera :
 ---
+Bunu etkinleştirdiğimiz zaman gerçek dünyada ki kamerayı taklit ediyor. Dhafazla ayarlar oluşuyor sensörler mercekler milimetreler.<br>
+--> Focal Length : Merceğini ayarlıyoruz .<br>
+--> Sensor Type : Milimetreler ve türler var 70mm dediğimizde çapı değişiyor. Ayarlar yapıp tercihlerde bulunabilir<br>
+--> Sensor Size : boyutunu ayarlıyoruz<br>
+--> Lens Shift : Merceğin merkezden yatay veya dikey kaldırılması.<br>
+--> Gate Fit :vectical horizantal merceğin boyutunu ve çözünürlüğünü ayarlıyoruz.<br>
 
 <br>
 
@@ -1180,3 +1186,7 @@ Dinamik çözünürlüğü ayarlıyor. Dinamik olarak kare hızı fps azaldığ�
 ### Target Eye ;
 Vr projeler için bakış açısı için kullanılıyor.<br>
 <br>
+
+# Birden fazla kamera 
+
+Birden fazla kamera oluşturuyoruz.
