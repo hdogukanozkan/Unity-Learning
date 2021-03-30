@@ -1,9 +1,8 @@
-# Unity C# Learning
-## C# Learning Files
 
 # Temel C#
 
-## Değişkenler 
+Değişkenler 
+---
 
 ```C#
 int i = 0; //tam sayılar
@@ -12,8 +11,8 @@ float yaş = 20.5f; //virgüllü küsüratlı sayılar
 bool dogrumu = true; //doğru yanlış
 ```
 
-## Döngüler
-
+Döngüler
+---
 
 ```C#
 
@@ -46,7 +45,9 @@ While(true)
 
 
 
-## Listeler
+
+
+# Listeler
 
 Diziler
 ---
