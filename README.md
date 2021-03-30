@@ -1144,7 +1144,7 @@ makinenin çizim sırasında ki konumu birden fazla kamera varsa kullanılır.<b
 
 ## GRAFİK AYARLARI
 
-Rendering Path ;
+### Rendering Path ;
 ----
 
 <br>
