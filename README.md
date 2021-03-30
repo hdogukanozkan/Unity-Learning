@@ -812,7 +812,7 @@ public class pasabahce : MonoBehaviour
 
 ```
 
-### Fizik İşlemleri  - Collider - RigidBody
+# Fizik İşlemleri  - Collider - RigidBody
 
 <p>
     Box collider , Capsule collider , Sphere collider  Collider bizim görmemiş olduğumuz çevresinde çizgi. 
@@ -838,7 +838,6 @@ public class pasabahce : MonoBehaviour
 
 
 ```C#
-
 
 /* not1
 eğer addan değil tagdan yakalanacaksa obje 
@@ -926,7 +925,7 @@ YİNE BU ŞEKİLDE CAN AZALTMA VE MATEMATİKSEL İŞLEMLERİ VEYA SİLME İŞLEM
             Debug.Log("Etkileşim bitti");
         }
     }
-
+    
 ```
 
 # 3D | JOİNTLER 1
@@ -957,7 +956,8 @@ Fixed Joint
     - Connected Mass Scale => Bağlantının kütle boyutudur. kütle boyutu düştükçe hareketler ağırlaşıyor yavaş hareket ediyor.
 </p>
 
-#### Hinge Joint
+Hinge Joint
+---
 
 <p>
     Hinge Joint(Component) Kapıların menteşesi için kullanılabilir ve gene objeleri birbirine bağlamak için kullanılabilir. Menteşe olayı vardır kapılarda vs genelde kullanılır.
@@ -1001,7 +1001,8 @@ Fixed Joint
     
 </p>
 
-#### Spring Joint
+Spring Joint
+---
 
 <p>
     Objeler arası yaylanma yapacağımız joint.
@@ -1019,7 +1020,8 @@ Fixed Joint
 
 </p>
 
-#### Constant force 
+Constant force 
+---
 <p>
     Roket atmak için hareket ettirmek için kullanılabilir.
     Bir yöne açıya sürekli güç uygulayarak hareket etmesini sağlar.
