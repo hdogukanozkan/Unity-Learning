@@ -1142,7 +1142,7 @@ Depth ;
 makinenin çizim sırasında ki konumu birden fazla kamera varsa kullanılır.<br>
 <br>
 
-### GRAFİK AYARLARI
+## GRAFİK AYARLARI
 
 Rendering Path ;
 ---
