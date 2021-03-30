@@ -1228,9 +1228,13 @@ Birden fazla kamera oluşturuyoruz ve bunları bir boş gameobjenin scripti ile 
 Occlusion Culling ;
 ---
 Bu culling objelerin arkasında kalan görünmeyen objelerin ekran kartına gitmesi engeller ve performans arttırımı sağlar. Camera objesinin içinde bulunur.
-<br>
+<br><br>
 Objeler eğer saklayabilirse arkasında obje tutabilirse statik yerine => Occluder static duvarlar örnek olabilir.
 <br>
 Eğer obje saklanıyorsa gizleniyorsa => Occludee Static Masa sandalye duvar arkasında kalan şeyler örnek olabilir.
+<br><br>
+Occluder Static = Arkalarında kalan objeleri gizleyen büyük objelerdir, Duvarlar mesela
 <br>
+Occludee Static =Bir duvarın yani  Occluder Static olarak ayarladığımız bir objenin  arkasında kalınca gizlenen objelerdir.
+<br><br>
 Obje hem saklanabilir hemde saklanabilen objeler içinde 2 si de verilecektir. Örneğin masanın altında kitaplar da saklanabilir gibi.
