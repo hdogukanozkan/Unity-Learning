@@ -1237,4 +1237,4 @@ Occluder Static = Arkalarında kalan objeleri gizleyen büyük objelerdir, Duvar
 <br>
 Occludee Static =Bir duvarın yani  Occluder Static olarak ayarladığımız bir objenin  arkasında kalınca gizlenen objelerdir.
 <br><br>
-Obje hem saklanabilir hemde saklanabilen objeler içinde 2 si de verilecektir. Örneğin masanın altında kitaplar da saklanabilir gibi.
+Obje hem saklanabilir hemde saklanabilen objeler içinde 2 si de verilecektir. Örneğin masanın altında kitaplar da saklanabilir gibi.<br>
