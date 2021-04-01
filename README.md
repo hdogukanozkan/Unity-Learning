@@ -1238,3 +1238,8 @@ Occluder Static = Arkalarında kalan objeleri gizleyen büyük objelerdir, Duvar
 Occludee Static =Bir duvarın yani  Occluder Static olarak ayarladığımız bir objenin  arkasında kalınca gizlenen objelerdir.
 <br><br>
 Obje hem saklanabilir hemde saklanabilen objeler içinde 2 si de verilecektir. Örneğin masanın altında kitaplar da saklanabilir gibi.<br>
+
+<br>
+Windows> Rendering kısmından occlusion culling açılır.AYARLARI TAM ANLAYAMADIM AMA DENEME YANILMA VEYA TEKNİK DETAY OLUYOR O YÜZDEN BİLEN BİRİNDEN DESTEK ALINABİLİR ve bake edilir ki optimizasyon sağlansın  ölçümler yapılır.
+
+
