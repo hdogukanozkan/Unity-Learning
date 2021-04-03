@@ -1253,12 +1253,13 @@ type : türü ışık türlerini değiştiririz <br>
 range : menzili ayarlar <br>
 Color : rengini ayarlarız <br>
 mode :  önemli  <br>
-1- baked derlemesi gerekiyor hesaplaması gerekiyor ve performansı arttırıyor bizim için.
-2- realtime gerçek zamanlı her kareye göre hesaplıyor ve çalışıyor oyun çalışırken sürekli konumları tekrar tekrar hesaplanıyor. Gerçek zamana göre... Bu çok daha performans harcıyor. (Hareketli ışıklar için kullanılmalıdır genelde)
-3- mixed realtime ve baked karışımı bir şeydir.hem Performans hem gerçek zamana uygun kullanılır.<br>
+1- baked derlemesi gerekiyor hesaplaması gerekiyor ve performansı arttırıyor bizim için.<br>
+2- realtime gerçek zamanlı her kareye göre hesaplıyor ve çalışıyor oyun çalışırken sürekli konumları tekrar tekrar hesaplanıyor. Gerçek zamana göre... Bu çok daha performans harcıyor. (Hareketli ışıklar için kullanılmalıdır genelde)<br>
+3- mixed realtime ve baked karışımı bir şeydir.hem Performans hem gerçek zamana uygun kullanılır.<br><br>
 İnstensity : Parlaklık<br>
 İndirect Multiplier : Dolaylı ışık aydınlatması bir yere çarptıktan sonra yansıtmasıdır.<br>
 Shadow type : Işığın çarptığı objelerde gölge olup olmayacağını. Hard / Soft genelde soft(Yumuşak) kullanılır. <br>
+
 
 Spot Light
 ---
