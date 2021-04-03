@@ -1259,7 +1259,11 @@ mode :  önemli  <br>
 İnstensity : Parlaklık<br>
 İndirect Multiplier : Dolaylı ışık aydınlatması bir yere çarptıktan sonra yansıtmasıdır.<br>
 Shadow type : Işığın çarptığı objelerde gölge olup olmayacağını. Hard / Soft genelde soft(Yumuşak) kullanılır. <br>
-
+Cookie : Texture da da cookie vardı.Biz ışığı istediğimiz bir şekile sokabiliyoruz.<br>
+Draw Halo : Güneş yaparken kullanılır. <br>
+Render Mode : Seçilen ışığın oluşturma önceliğini ayarlıyoruz. Daha önemli ışıklar var örneğin güneş ışığı.<br>
+Culling Mask Işığın alması için layerları seçiyoruz.
+<br>
 
 Spot Light
 ---
@@ -1269,3 +1273,13 @@ Area Light
 ---
 Otomatik hesaplamayı açman lazım auto generate lighting off u on yapmak lazım.<br>
 Ortam ışıklandırması oda gibi daha çok kare olarak kullanılan ışık türüdür.Statik değişmeyecek obje yapabiliriz.Objelerinde üzerine ışık vurması için statik obje olmasını sağlarız ve ek olarak area light biraz daha beklemeli ve render etmeli bir obje.
+
+Reflection Probe (Light Probe Group grup çoklu halidir genelde group kullanılır.)
+---
+ANLAMADIM :) 
+
+
+Lighting Paneli
+---
+window > rendering > lighting  <br>
+<br>
