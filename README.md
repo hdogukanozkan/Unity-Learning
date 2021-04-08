@@ -1283,3 +1283,24 @@ Lighting Paneli
 ---
 window > rendering > lighting  <br>
 <br>
+
+# Efekt
+<p>
+    Kıvılcım efekti alev efekti bunların anlatıldığı bölümdür.
+</p> 
+
+Component efektleri:
+---
+1- Trail Renderer :<br>
+<p>
+    Bu bir objenin arkasında bırakacağı iz olarak düşünebiliriz.
+</p>
+Bir grafik var burada efektin boyutunu kalınlığını ayarlıyabiliyoruz add key ile birden fazla key ekleyip uzunluğun sonunu ve başını isteğimize göre tasarlayabiliyoruz boyutunu.<br>
+time: efektin yaşam ömrünü belirler<br>
+autodestruckt : efekt bittiğinde bağlı objeyi yok eder. // trail efektinde bir den fazla efektin birikmesi objelerin durması şişmeye sebep olur silmek etkili olabilir...<br>
+emmiting : tamamen çizgiyi iptal eder tiki tekrar attığımızda çizgi devam eder.<br>
+Color: ize renk veriyoruz <br>
+Comer Vertices köşelerin daha koşeli olması yuvarlağımsı yumuşak yapar.<br>
+End Cap Vertices : objenin ilk çıktı kısımında ki efekti izi düz değil de oval yapar. <br>
+
+
