@@ -1312,4 +1312,22 @@ Repeat Per Segment :Dokunun iz boyunca tekrarlamasını sağlar<br><br>
 Generate Lighting Data : Işık datası oluşturur bunu başka yerde kullanmamız içinde datayı saklar .<br>
 Shadow Bias : Gölge sapmasıdır yere vurduğunda gölgenin yayılmasını sağlar.<br>
 <br><br>
-Lighting
+Meterials Kısmı <br><br>
+<p>
+
+</p>
+<br><br>
+Lighting Kısmı <br><br>
+Cast Shadows :gölgelendirme olup olmayacağını seçebiliyoruz on off ile two sided arkadan gelen efektinde gölgesini görürüz daha gerçekçi olur shadows only ise sadece gölge görürüz çizgi yok olur.<br>
+Receive Shadows : efektin üstüne gölge etki edecek mi etmeyecek mi seçiyoruz binanın altında kalırsa gölgeden etkilenir ama etkilenmesini istemiyorsak gibi seçenekler var.<br>
+<br><br>
+Probes Kısmı <br><br>
+Light Probes :<br>
+Reflection Probes :<br>
+<br><br>
+Additional Settings Kısmı<br><br>
+Motion Vectors : probes lar ile ilgili kısım <br>
+Dynamic Occlusion : hesaplama yaparken obje statik yapılmışken dahil olmasını sağlar.<br>
+Sorting Layer :birden fazla efekt varsa sıralamasını yaparız<br>
+Order İn Layer:<br>
+<br><br>
