@@ -1307,8 +1307,9 @@ Texture Mode : <br>
 Skretch : Çizginin üzerine bütün texture yayar.<br>
 Tile : texture yani Duman ufaksa küçük küçük tekrarlar sağlar. <br>
 Distribute Per Segment : Tüm köşeleri eşit aralıklarla hizalar.<br>
-Repeat Per Segment :Dokunun iz boyunca tekrarlamasını sağlar<br>
+Repeat Per Segment :Dokunun iz boyunca tekrarlamasını sağlar<br><br>
+
 Generate Lighting Data : Işık datası oluşturur bunu başka yerde kullanmamız içinde datayı saklar .<br>
 Shadow Bias : Gölge sapmasıdır yere vurduğunda gölgenin yayılmasını sağlar.<br>
-<br>
+<br><br>
 Lighting
