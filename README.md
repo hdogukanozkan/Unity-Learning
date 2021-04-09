@@ -1302,5 +1302,13 @@ emmiting : tamamen çizgiyi iptal eder tiki tekrar attığımızda çizgi devam 
 Color: ize renk veriyoruz <br>
 Comer Vertices köşelerin daha koşeli olması yuvarlağımsı yumuşak yapar.<br>
 End Cap Vertices : objenin ilk çıktı kısımında ki efekti izi düz değil de oval yapar. <br>
-
-
+Alignment :Çizginin baktığı yönü değiştiriyor.<br><br>
+Texture Mode : <br>
+Skretch : Çizginin üzerine bütün texture yayar.<br>
+Tile : texture yani Duman ufaksa küçük küçük tekrarlar sağlar. <br>
+Distribute Per Segment : Tüm köşeleri eşit aralıklarla hizalar.<br>
+Repeat Per Segment :Dokunun iz boyunca tekrarlamasını sağlar<br>
+Generate Lighting Data : Işık datası oluşturur bunu başka yerde kullanmamız içinde datayı saklar .<br>
+Shadow Bias : Gölge sapmasıdır yere vurduğunda gölgenin yayılmasını sağlar.<br>
+<br>
+Lighting
