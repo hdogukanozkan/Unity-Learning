@@ -1330,4 +1330,32 @@ Motion Vectors : probes lar ile ilgili kısım <br>
 Dynamic Occlusion : hesaplama yaparken obje statik yapılmışken dahil olmasını sağlar.<br>
 Sorting Layer :birden fazla efekt varsa sıralamasını yaparız<br>
 Order İn Layer:<br>
+<br><br><br>
+
+2- Line Renderer :<br>
+<p>
+    Burada bir obje ile nokta arasında çizgi çizmeyi sağlayan efekti göreceğiz ışın silahıyla lazer yapan efekt budur.<br>
+    Editleme bölümü var burada ki noktacıklarla istediğimiz gibi boyutlandırabiliyoruz şekillendiriyoruz.<br>
+    + ya bastığımızda mouse position bastığımız noktaya uygular.
+</p>
+<br>
+Use World Space :  tiksiz olduğunda mesela silahı hareket ettirdiğimde ışında gönderdiğim ışında silaha bağlı olarak hareket eder ancak tik atarsak use world space diyerek dünyayı kullan dediğimizde ise obje ile ışın arasında ki bağ kopar .<br>
 <br><br>
+
+3- Halo :<br>
+<p>
+    Sis perdesi olarak kullanılabilir çok detayı yok.
+</p>
+<br><br><br>
+
+4- Line Flare :<br>
+<p>
+    Yıldızdaki parlama olarak yapılabilir bir veya farklı yerlerde kullanılabilir güneş ışığını aldığı sürece çalışır.
+</p>
+<br><br><br>
+5- Projector :<br>
+<p>
+    Projeksiyon aleti işlevi görür bir görüntüyü yansıtmak için kullanılabilir. reklamlar için kullanılabilir etkili bir yöntemdir.
+</p>
+<br><br><br>
+6- Line Renderer :<br>
