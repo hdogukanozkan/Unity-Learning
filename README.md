@@ -1359,3 +1359,21 @@ Use World Space :  tiksiz olduğunda mesela silahı hareket ettirdiğimde ışı
 </p>
 <br><br><br>
 6- Line Renderer :<br>
+
+<br><br><br>
+
+# Efektler
+
+Particle system:
+---
+Genelde hazır yapılar kullanılır.
+Kamp ateşi gibi kompleks yapılır için kullanılır bunlar için genel olarak hazır assetler bulunuyor veya benzerlerini internetten bakarak yapılabilir.
+<br>
+<br>
+
+Visual Graphic 
+---
+Daha az güç isteyen ekran kartı üzerinde çalışan bir efekttir sistemi çok yormaz bunun için > Packeage Manager kısmından Visual effect graph indirilir.<br>
+
+Daha sonrada  Dosyalar yani project kısmına creat > Visual Efekt > visual effect graph' a tıklıyoruz. <br>
+
