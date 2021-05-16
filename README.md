@@ -1377,3 +1377,16 @@ Daha az güç isteyen ekran kartı üzerinde çalışan bir efekttir sistemi ço
 
 Daha sonrada  Dosyalar yani project kısmına creat > Visual Efekt > visual effect graph' a tıklıyoruz. <br>
 
+Bize genel olarak bir şablon veriliyor.<br>
+Spawn system kısmı çıkma oranı belirleniyor yoğunluğu.<br>
+<br>
+system kısmına geliyoruz.<br>
+<br>
+set velocity random : güç uyugluyoruz belirlediğimiz yöne doğru.
+<br>
+lifetime:efektlerin yaşam ömrünü belirleriz.
+<br>
+<br>
+update particle:günceleme döngüsü oluşturulan parçacıkların sürekli işlenmesi çalışması.
+<br>
+output particle quad:
